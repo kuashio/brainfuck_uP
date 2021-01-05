@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="brainfuck_uP" device="LCMXO2-640HC-4TG100C" default_implementation="brainfuck_uP">
+    <Options/>
+    <Implementation title="brainfuck_uP" dir="brainfuck_uP" description="brainfuck_uP" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="brainfuck_uP" top="brainfuck_uP"/>
+        <Source name="brainfuck_uP/source/brainfuck_uP.v" type="Verilog" type_short="Verilog">
+            <Options top_module="brainfuck_uP"/>
+        </Source>
+        <Source name="brainfuck_uP/source/memory.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="brainfuck_uP/source/testing_brainfuck_uP.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="brainfuck_uP.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="brainfuck_uP/brainfuck_uP.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="Testing/Testing.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="testing_Brainfuino/testing_Brainfuino.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="testingBF/testingBF.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="testingSlowPorts/testingSlowPorts.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="Untitled.pcf" type="Power Calculator" type_short="PCF" excluded="TRUE">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="brainfuck_uP1.sty"/>
+</BaliProject>

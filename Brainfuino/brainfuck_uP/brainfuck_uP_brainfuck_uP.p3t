@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "brainfuck_uP_brainfuck_uP.log"
+-o "brainfuck_uP_brainfuck_uP.csv"
+-pr "brainfuck_uP_brainfuck_uP.prf"

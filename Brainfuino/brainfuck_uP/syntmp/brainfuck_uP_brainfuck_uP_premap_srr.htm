@@ -1,0 +1,128 @@
+<html><body><samp><pre>
+<!@TC:1608609359>
+# Mon Dec 21 21:55:58 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: VITTORIO
+
+Implementation : brainfuck_uP
+<a name=mapperReport5></a>Synopsys Lattice Technology Pre-mapping, Version maplat2018q2p1, Build 055R, Built Apr  3 2019 09:51:54</a>
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1608609359> | No constraint file specified. 
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1608609359> | Setting synthesis effort to medium for the design 
+@L: C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.0\brainfuck_uP\brainfuck_uP_brainfuck_uP_scck.rpt 
+Printing clock  summary report in "C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.0\brainfuck_uP\brainfuck_uP_brainfuck_uP_scck.rpt" file 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1608609359> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1608609359> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1608609359> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
+
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1608609359> | Setting synthesis effort to medium for the design 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1608609359> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1608609359> | UMR3 is only supported for HAPS-80. 
+Encoding state machine state[5:0] (in view: work.brainfuck_uP(verilog))
+original code -> new code
+   000001 -> 000001
+   000010 -> 000010
+   000100 -> 000100
+   001000 -> 001000
+   010000 -> 010000
+   100000 -> 100000
+syn_allowed_resources : blockrams=2  set on top level netlist brainfuck_uP
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+
+<a name=mapperReport6></a>Clock Summary</a>
+******************
+
+          Start                     Requested     Requested     Clock        Clock                   Clock
+Level     Clock                     Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------
+0 -       brainfuck_uP|bfup_clk     50.0 MHz      20.000        inferred     Inferred_clkgroup_0     86   
+==========================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                          Clock     Source             Clock Pin       Non-clock Pin     Non-clock Pin
+Clock                     Load      Pin                Seq Example     Seq Example       Comb Example 
+------------------------------------------------------------------------------------------------------
+brainfuck_uP|bfup_clk     86        bfup_clk(port)     portRD.C        -                 -            
+======================================================================================================
+
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@W:MT529:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609359> | Found inferred clock brainfuck_uP|bfup_clk which controls 86 sequential elements including state[5]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+<a name=clockReport7></a>#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[</a>
+
+1 non-gated/non-generated clock tree(s) driving 86 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+<a href="@|L:C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.0\brainfuck_uP\synwork\brainfuck_uP_brainfuck_uP_prem.srm@|S:bfup_clk@|E:state[5]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0 @XP_NAMES_BY_PROP">ClockId_0_0</a>       bfup_clk            Unconstrained_port     86         state[5]       
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N:<a href="@N:FX1143:@XP_HELP">FX1143</a> : <!@TM:1608609359> | Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized. 
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 143MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Dec 21 21:55:59 2020
+
+###########################################################]
+
+</pre></samp></body></html>

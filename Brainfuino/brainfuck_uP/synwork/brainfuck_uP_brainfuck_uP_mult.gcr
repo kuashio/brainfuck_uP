@@ -1,0 +1,7 @@
+i bfup_clk
+m 0 0
+u 20 94
+p {p:bfup_clk}{t:state[6].C}
+e ckid0_0 {t:state[6].C} dff
+c ckid0_0 {p:bfup_clk} Unconstrained_port Inferred clock from port
+l 0 0 0 0 0

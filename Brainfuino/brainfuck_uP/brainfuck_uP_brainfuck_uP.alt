@@ -1,0 +1,82 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Jan 05 11:21:27 2021 *
+NOTE DESIGN NAME: brainfuck_uP *
+NOTE DEVICE NAME: LCMXO2-640HC-4TQFP100 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS pData[7] : 39 : inout *
+NOTE PINS pData[6] : 38 : inout *
+NOTE PINS pData[5] : 37 : inout *
+NOTE PINS pData[4] : 36 : inout *
+NOTE PINS pData[3] : 35 : inout *
+NOTE PINS pData[2] : 34 : inout *
+NOTE PINS pData[1] : 32 : inout *
+NOTE PINS pData[0] : 31 : inout *
+NOTE PINS portRD : 77 : out *
+NOTE PINS portWR : 78 : out *
+NOTE PINS outPort[7] : 88 : out *
+NOTE PINS outPort[6] : 87 : out *
+NOTE PINS outPort[5] : 86 : out *
+NOTE PINS outPort[4] : 85 : out *
+NOTE PINS outPort[3] : 84 : out *
+NOTE PINS outPort[2] : 83 : out *
+NOTE PINS outPort[1] : 82 : out *
+NOTE PINS outPort[0] : 81 : out *
+NOTE PINS p[16] : 17 : out *
+NOTE PINS p[15] : 18 : out *
+NOTE PINS p[14] : 16 : out *
+NOTE PINS p[13] : 20 : out *
+NOTE PINS p[12] : 15 : out *
+NOTE PINS p[11] : 25 : out *
+NOTE PINS p[10] : 40 : out *
+NOTE PINS p[9] : 24 : out *
+NOTE PINS p[8] : 21 : out *
+NOTE PINS p[7] : 14 : out *
+NOTE PINS p[6] : 13 : out *
+NOTE PINS p[5] : 12 : out *
+NOTE PINS p[4] : 10 : out *
+NOTE PINS p[3] : 27 : out *
+NOTE PINS p[2] : 28 : out *
+NOTE PINS p[1] : 29 : out *
+NOTE PINS p[0] : 30 : out *
+NOTE PINS RD : 41 : out *
+NOTE PINS WR : 19 : out *
+NOTE PINS pc_pins[17] : 66 : out *
+NOTE PINS pc_pins[16] : 67 : out *
+NOTE PINS pc_pins[15] : 68 : out *
+NOTE PINS pc_pins[14] : 65 : out *
+NOTE PINS pc_pins[13] : 64 : out *
+NOTE PINS pc_pins[12] : 69 : out *
+NOTE PINS pc_pins[11] : 60 : out *
+NOTE PINS pc_pins[10] : 42 : out *
+NOTE PINS pc_pins[9] : 62 : out *
+NOTE PINS pc_pins[8] : 63 : out *
+NOTE PINS pc_pins[7] : 70 : out *
+NOTE PINS pc_pins[6] : 71 : out *
+NOTE PINS pc_pins[5] : 74 : out *
+NOTE PINS pc_pins[4] : 75 : out *
+NOTE PINS pc_pins[3] : 51 : out *
+NOTE PINS pc_pins[2] : 52 : out *
+NOTE PINS pc_pins[1] : 53 : out *
+NOTE PINS pc_pins[0] : 54 : out *
+NOTE PINS inPort[7] : 96 : in *
+NOTE PINS inPort[6] : 97 : in *
+NOTE PINS inPort[5] : 98 : in *
+NOTE PINS inPort[4] : 99 : in *
+NOTE PINS inPort[3] : 1 : in *
+NOTE PINS inPort[2] : 2 : in *
+NOTE PINS inPort[1] : 3 : in *
+NOTE PINS inPort[0] : 4 : in *
+NOTE PINS incoming : 76 : in *
+NOTE PINS bfup_clk : 8 : in *
+NOTE PINS reset : 7 : in *
+NOTE PINS instruction[7] : 43 : in *
+NOTE PINS instruction[6] : 45 : in *
+NOTE PINS instruction[5] : 47 : in *
+NOTE PINS instruction[4] : 48 : in *
+NOTE PINS instruction[3] : 49 : in *
+NOTE PINS instruction[2] : 59 : in *
+NOTE PINS instruction[1] : 58 : in *
+NOTE PINS instruction[0] : 57 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

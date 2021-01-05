@@ -1,0 +1,17 @@
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+VOLTAGE 2.375 V;
+OUTPUT PORT "RD" LOAD 0.000000 pF ;
+SSO PORT "RD"  SSO_Noise=0 SSO_Noise_Drop=0 SSO_Allowance=100 ;
+OUTPUT PORT "pc_pins[0]" LOAD 0.000000 pF ;
+SSO PORT "pc_pins[0]"  SSO_Noise=0 SSO_Noise_Drop=0 SSO_Allowance=100 ;
+OUTPUT PORT "pc_pins[1]" LOAD 0.000000 pF ;
+SSO PORT "pc_pins[1]"  SSO_Noise=0 SSO_Noise_Drop=0 SSO_Allowance=100 ;
+OUTPUT PORT "pc_pins[2]" LOAD 0.000000 pF ;
+SSO PORT "pc_pins[2]"  SSO_Noise=0 SSO_Noise_Drop=0 SSO_Allowance=100 ;
+OUTPUT PORT "pc_pins[3]" LOAD 0.000000 pF ;
+SSO PORT "pc_pins[3]"  SSO_Noise=0 SSO_Noise_Drop=0 SSO_Allowance=100 ;
+OUTPUT PORT "pc_pins[4]" LOAD 0.000000 pF ;
+SSO PORT "pc_pins[4]"  SSO_Noise=0 SSO_Noise_Drop=0 SSO_Allowance=100 ;
+FREQUENCY NET "bfup_clk_c" 198.570000 MHz ;
+COMMERCIAL ;

@@ -1,0 +1,402 @@
+
+         Lattice Mapping Report File for Design Module 'brainfuck_uP'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-640HC -t TQFP100 -s 4 -oc Commercial
+     brainfuck_uP_brainfuck_uP.ngd -o brainfuck_uP_brainfuck_uP_map.ncd -pr
+     brainfuck_uP_brainfuck_uP.prf -mp brainfuck_uP_brainfuck_uP.mrp
+     C:/Users/kuash/OneDrive/Documents/brainfuck/Brainfuino/github
+     repo/brainfuck_uP/Brainfuino/brainfuck_uP.lpf -c 0 -tdm -split_node
+     -td_pack -gui -msgset
+     C:/Users/kuash/OneDrive/Documents/brainfuck/Brainfuino/github
+     repo/brainfuck_uP/Brainfuino/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-640HCTQFP100
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.11.2.446
+Mapped on:  01/05/21  11:21:01
+
+Design Summary
+--------------
+
+   Number of registers:    106 out of   877 (12%)
+      PFU registers:          106 out of   640 (17%)
+      PIO registers:            0 out of   237 (0%)
+   Number of SLICEs:       301 out of   320 (94%)
+      SLICEs as Logic/ROM:    301 out of   320 (94%)
+      SLICEs as RAM:            0 out of   240 (0%)
+      SLICEs as Carry:         67 out of   320 (21%)
+   Number of LUT4s:        575 out of   640 (90%)
+      Number used as logic LUTs:        441
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      134
+      Number used as shift registers:     0
+   Number of PIO sites used: 74 + 4(JTAG) out of 79 (99%)
+   Number of block RAMs:  0 out of 2 (0%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net bfup_clk_c: 65 loads, 65 rising, 0 falling (Driver: PIO bfup_clk )
+   Number of Clock Enables:  5
+     Net state_6: 5 loads, 5 LSLICEs
+     Net bfup_clk_c_enable_27: 8 loads, 8 LSLICEs
+     Net bfup_clk_c_enable_10: 4 loads, 4 LSLICEs
+     Net bfup_clk_c_enable_11: 1 loads, 1 LSLICEs
+
+                                    Page 1
+
+
+
+
+Design:  brainfuck_uP                                  Date:  01/05/21  11:21:01
+
+Design Summary (cont)
+---------------------
+     Net bfup_clk_c_enable_13: 1 loads, 1 LSLICEs
+   Number of LSRs:  1
+     Net reset_c: 64 loads, 64 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net reset_c: 85 loads
+     Net instruction_c_1: 79 loads
+     Net state_0: 75 loads
+     Net state_6: 46 loads
+     Net state_5: 45 loads
+     Net instruction_c_0: 38 loads
+     Net FWD: 30 loads
+     Net n48: 29 loads
+     Net state_2: 26 loads
+     Net n1950: 25 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| pData[7]            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pData[6]            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pData[5]            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pData[4]            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pData[3]            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pData[2]            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pData[1]            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pData[0]            | BIDIR     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portRD              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| portWR              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outPort[7]          | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 2
+
+
+
+
+Design:  brainfuck_uP                                  Date:  01/05/21  11:21:01
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| outPort[6]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outPort[5]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outPort[4]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outPort[3]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outPort[2]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outPort[1]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outPort[0]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[16]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[15]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[14]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[13]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[12]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[11]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[10]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[9]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[8]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[7]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[6]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[5]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[4]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[3]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[2]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[1]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| p[0]                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| RD                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| WR                  | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[17]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[16]         | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 3
+
+
+
+
+Design:  brainfuck_uP                                  Date:  01/05/21  11:21:01
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| pc_pins[15]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[14]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[13]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[12]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[11]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[10]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[9]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[8]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[7]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[6]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[5]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[4]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[3]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[2]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[1]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pc_pins[0]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| inPort[7]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| inPort[6]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| inPort[5]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| inPort[4]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| inPort[3]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| inPort[2]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| inPort[1]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| inPort[0]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| incoming            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bfup_clk            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| reset               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| instruction[7]      | INPUT     | LVCMOS33  |            |
+
+                                    Page 4
+
+
+
+
+Design:  brainfuck_uP                                  Date:  01/05/21  11:21:01
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| instruction[6]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| instruction[5]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| instruction[4]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| instruction[3]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| instruction[2]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| instruction[1]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| instruction[0]      | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i2 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal n3500 was merged into signal drive_bus
+Signal n7524 was merged into signal reset_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal add_114_19/S1 undriven or does not drive anything - clipped.
+Signal add_114_19/CO undriven or does not drive anything - clipped.
+Signal add_151_17/S1 undriven or does not drive anything - clipped.
+Signal add_151_17/CO undriven or does not drive anything - clipped.
+Signal add_826_9/CO undriven or does not drive anything - clipped.
+Signal sub_115_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_115_add_2_1/CI undriven or does not drive anything - clipped.
+Signal sub_85_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_85_add_2_1/CI undriven or does not drive anything - clipped.
+Signal sub_85_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal sub_85_add_2_9/CO undriven or does not drive anything - clipped.
+Signal add_88_1/S0 undriven or does not drive anything - clipped.
+Signal add_88_1/CI undriven or does not drive anything - clipped.
+Signal add_832_1/S1 undriven or does not drive anything - clipped.
+Signal add_832_1/S0 undriven or does not drive anything - clipped.
+Signal add_832_1/CI undriven or does not drive anything - clipped.
+Signal sub_124_add_2_19/S1 undriven or does not drive anything - clipped.
+Signal sub_124_add_2_19/CO undriven or does not drive anything - clipped.
+Signal add_114_1/S0 undriven or does not drive anything - clipped.
+Signal add_114_1/CI undriven or does not drive anything - clipped.
+Signal add_832_19/CO undriven or does not drive anything - clipped.
+Signal sub_115_add_2_17/CO undriven or does not drive anything - clipped.
+Signal add_151_1/S0 undriven or does not drive anything - clipped.
+Signal add_151_1/CI undriven or does not drive anything - clipped.
+Signal add_88_17/CO undriven or does not drive anything - clipped.
+Signal add_826_1/S1 undriven or does not drive anything - clipped.
+Signal add_826_1/S0 undriven or does not drive anything - clipped.
+Signal add_826_1/CI undriven or does not drive anything - clipped.
+Signal sub_124_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_124_add_2_1/CI undriven or does not drive anything - clipped.
+Block i926_1_lut was optimized away.
+
+                                    Page 5
+
+
+
+
+Design:  brainfuck_uP                                  Date:  01/05/21  11:21:01
+
+Removed logic (cont)
+--------------------
+Block i739_1_lut_rep_128 was optimized away.
+Block i1 was optimized away.
+
+     
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 42 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights
+     reserved.

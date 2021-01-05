@@ -1,0 +1,10 @@
+---------------------------------------------------
+Report for cell brainfuck_uP
+   Instance path: brainfuck_uP
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     301.00        100.0
+                                  LUT4	     441.00        100.0
+                                 IOBUF	         74        100.0
+                                PFUREG	        106        100.0
+                                RIPPLE	         67        100.0

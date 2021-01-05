@@ -1,0 +1,32 @@
+----------------------------------------------------------------------
+Report for cell brainfuck_uP.verilog
+
+Register bits: 136 of 640 (21%)
+PIC Latch:       0
+I/O cells:       74
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        8       100.0
+                              CCU2D       36       100.0
+                            FD1P3IX       17       100.0
+                            FD1P3JX        6       100.0
+                            FD1S3AX        5       100.0
+                            FD1S3IX       68       100.0
+                            FD1S3JX        4       100.0
+                                GSR        1       100.0
+                                 IB       19       100.0
+                           IFS1P3DX        1       100.0
+                           IFS1P3IX       20       100.0
+                           IFS1P3JX        4       100.0
+                                INV        2       100.0
+                                 OB       29       100.0
+                                OBZ       18       100.0
+                           OFS1P3IX        8       100.0
+                           OFS1P3JX        3       100.0
+                           ORCALUT4      162       100.0
+                              PFUMX        1       100.0
+                                PUR        1       100.0
+                                VHI        1       100.0
+                                VLO        1       100.0
+                            
+                         TOTAL           415           

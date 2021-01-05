@@ -1,0 +1,1 @@
+@W: MT420 |Found inferred clock brainfuck_uP|bfup_clk with period 12.50ns. Please declare a user-defined clock on port bfup_clk.

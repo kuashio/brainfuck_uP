@@ -1,0 +1,132 @@
+Loading design for application iotiming from file brainfuck_up_brainfuck_up.ncd.
+Design name: brainfuck_uP
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640HC
+Package:     TQFP100
+Performance: 5
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file brainfuck_up_brainfuck_up.ncd.
+Design name: brainfuck_uP
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640HC
+Package:     TQFP100
+Performance: 6
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file brainfuck_up_brainfuck_up.ncd.
+Design name: brainfuck_uP
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640HC
+Package:     TQFP100
+Performance: M
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: brainfuck_uP
+// Package: TQFP100
+// ncd File: brainfuck_up_brainfuck_up.ncd
+// Version: Diamond (64-bit) 3.11.2.446
+// Written on Tue Jan 05 11:21:24 2021
+// M: Minimum Performance Grade
+// iotiming brainfuck_uP_brainfuck_uP.ncd brainfuck_uP_brainfuck_uP.prf -gui -msgset C:/Users/kuash/OneDrive/Documents/brainfuck/Brainfuino/github repo/brainfuck_uP/Brainfuino/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port           Clock    Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+inPort[0]      bfup_clk R     5.387      4      -0.063     M
+inPort[1]      bfup_clk R     4.819      4       0.070     M
+inPort[2]      bfup_clk R     5.170      4      -0.017     M
+inPort[3]      bfup_clk R     5.315      4       0.009     M
+inPort[4]      bfup_clk R     4.063      4       0.115     M
+inPort[5]      bfup_clk R     4.575      4       0.022     M
+inPort[6]      bfup_clk R     4.222      4      -0.105     M
+inPort[7]      bfup_clk R     3.581      4       0.052     M
+incoming       bfup_clk R     6.222      4       0.716     4
+instruction[0] bfup_clk R    16.710      4       0.590     6
+instruction[1] bfup_clk R    15.979      4       0.899     4
+instruction[2] bfup_clk R    13.291      4       0.532     4
+instruction[3] bfup_clk R    12.654      4       0.475     6
+instruction[4] bfup_clk R    13.588      4       0.108     M
+instruction[5] bfup_clk R    13.644      4       0.292     M
+instruction[6] bfup_clk R    13.826      4       0.215     M
+instruction[7] bfup_clk R    13.541      4       0.369     6
+pData[0]       bfup_clk R    14.346      4       2.261     4
+pData[1]       bfup_clk R    16.202      4       1.738     4
+pData[2]       bfup_clk R    15.920      4       2.694     4
+pData[3]       bfup_clk R    14.555      4       2.368     4
+pData[4]       bfup_clk R    14.880      4       1.565     4
+pData[5]       bfup_clk R    15.001      4       1.701     4
+pData[6]       bfup_clk R    15.918      4       1.962     4
+pData[7]       bfup_clk R    16.608      4       1.635     4
+reset          bfup_clk R     3.970      4       1.532     4
+
+
+// Clock to Output Delay
+
+Port        Clock    Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+RD          bfup_clk R    10.231         4        2.892          M
+WR          bfup_clk R    10.623         4        3.008          M
+outPort[0]  bfup_clk R    10.779         4        3.054          M
+outPort[1]  bfup_clk R    10.708         4        3.019          M
+outPort[2]  bfup_clk R    10.831         4        3.043          M
+outPort[3]  bfup_clk R    10.708         4        3.019          M
+outPort[4]  bfup_clk R    10.975         4        3.113          M
+outPort[5]  bfup_clk R    10.779         4        3.054          M
+outPort[6]  bfup_clk R    11.248         4        3.144          M
+outPort[7]  bfup_clk R    11.134         4        3.124          M
+pData[0]    bfup_clk R    10.970         4        2.649          M
+pData[1]    bfup_clk R    10.970         4        2.844          M
+pData[2]    bfup_clk R    10.970         4        2.761          M
+pData[3]    bfup_clk R    10.970         4        2.761          M
+pData[4]    bfup_clk R    11.041         4        2.844          M
+pData[5]    bfup_clk R    11.041         4        2.838          M
+pData[6]    bfup_clk R    11.041         4        2.755          M
+pData[7]    bfup_clk R    11.041         4        2.755          M
+p[0]        bfup_clk R     9.619         4        2.735          M
+p[10]       bfup_clk R    11.001         4        3.082          M
+p[11]       bfup_clk R    11.452         4        3.184          M
+p[12]       bfup_clk R    10.451         4        2.950          M
+p[13]       bfup_clk R    10.161         4        2.861          M
+p[14]       bfup_clk R    10.570         4        2.977          M
+p[15]       bfup_clk R    10.575         4        2.964          M
+p[16]       bfup_clk R    10.312         4        2.926          M
+p[1]        bfup_clk R     9.709         4        2.764          M
+p[2]        bfup_clk R    10.462         4        2.957          M
+p[3]        bfup_clk R    10.638         4        3.013          M
+p[4]        bfup_clk R    10.559         4        2.942          M
+p[5]        bfup_clk R    10.049         4        2.838          M
+p[6]        bfup_clk R    10.168         4        2.865          M
+p[7]        bfup_clk R    10.959         4        3.093          M
+p[8]        bfup_clk R    10.149         4        2.859          M
+p[9]        bfup_clk R    10.318         4        2.927          M
+pc_pins[0]  bfup_clk R     9.837         4        2.782          M
+pc_pins[10] bfup_clk R    10.128         4        2.871          M
+pc_pins[11] bfup_clk R    11.329         4        3.161          M
+pc_pins[12] bfup_clk R     9.826         4        2.760          M
+pc_pins[13] bfup_clk R     9.639         4        2.728          M
+pc_pins[14] bfup_clk R    11.046         4        3.075          M
+pc_pins[15] bfup_clk R    10.571         4        2.949          M
+pc_pins[16] bfup_clk R    10.145         4        2.840          M
+pc_pins[17] bfup_clk R    10.227         4        2.872          M
+pc_pins[1]  bfup_clk R    10.154         4        2.865          M
+pc_pins[2]  bfup_clk R    10.146         4        2.864          M
+pc_pins[3]  bfup_clk R    10.618         4        2.966          M
+pc_pins[4]  bfup_clk R    11.187         4        3.105          M
+pc_pins[5]  bfup_clk R    10.441         4        2.933          M
+pc_pins[6]  bfup_clk R    10.211         4        2.869          M
+pc_pins[7]  bfup_clk R    11.069         4        3.089          M
+pc_pins[8]  bfup_clk R    10.344         4        2.926          M
+pc_pins[9]  bfup_clk R     9.304         4        2.644          M
+portRD      bfup_clk R    10.640         4        2.991          M
+portWR      bfup_clk R     9.986         4        2.835          M
+WARNING: you must also run trce with hold speed: 4
+WARNING: you must also run trce with hold speed: 6

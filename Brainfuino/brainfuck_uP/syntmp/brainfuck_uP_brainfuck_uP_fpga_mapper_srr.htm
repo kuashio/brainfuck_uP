@@ -1,0 +1,436 @@
+<html><body><samp><pre>
+<!@TC:1608609362>
+# Mon Dec 21 21:55:59 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: VITTORIO
+
+Implementation : brainfuck_uP
+<a name=mapperReport8></a>Synopsys Lattice Technology Mapper, Version maplat2018q2p1, Build 055R, Built Apr  3 2019 09:51:54</a>
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1608609362> | Setting synthesis effort to medium for the design 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1608609362> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1608609362> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1608609362> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1608609362> | Setting synthesis effort to medium for the design 
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 143MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+@N:<a href="@N:FA113:@XP_HELP">FA113</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:79:2:79:4:@N:FA113:@XP_MSG">brainfuck_up.v(79)</a><!@TM:1608609362> | Pipelining module un1_pc[17:0]. For more information, search for "pipelining" in Online Help.
+@N:<a href="@N:MF169:@XP_HELP">MF169</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@N:MF169:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Pushed in register pc[17:0].
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 151MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    11.41ns		  89 /        88
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 151MB)
+
+@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1608609362> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register portRD.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register portWR.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register outPort_7_.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register outPort_6_.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register outPort_5_.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register outPort_4_.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register outPort_3_.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register outPort_2_.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register outPort_1_.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register outPort_0_.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register WR.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.0\brainfuck_up\source\brainfuck_up.v:78:1:78:7:@A:BN291:@XP_MSG">brainfuck_up.v(78)</a><!@TM:1608609362> | Boundary register RD.fb (in view: work.brainfuck_uP(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 151MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 151MB)
+
+Writing Analyst data base C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.0\brainfuck_uP\synwork\brainfuck_uP_brainfuck_uP_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 151MB)
+
+Writing EDIF Netlist and constraint files
+@N:<a href="@N:FX1056:@XP_HELP">FX1056</a> : <!@TM:1608609362> | Writing EDF file: C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.0\brainfuck_uP\brainfuck_uP_brainfuck_uP.edi 
+N-2018.03L-SP1-1
+@N:<a href="@N:BW106:@XP_HELP">BW106</a> : <!@TM:1608609362> | Synplicity Constraint File capacitance units using default value of 1pF  
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 156MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 156MB)
+
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1608609362> | Found inferred clock brainfuck_uP|bfup_clk with period 20.00ns. Please declare a user-defined clock on port bfup_clk.</font> 
+
+
+<a name=timingReport9></a>##### START OF TIMING REPORT #####[</a>
+<a name=10></a># Timing Report written on Mon Dec 21 21:56:02 2020</a>
+#
+
+
+Top view:               brainfuck_uP
+Requested Frequency:    50.0 MHz
+Wire load mode:         top
+Paths requested:        3
+Constraint File(s):    
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1608609362> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1608609362> | Clock constraints include only register-to-register paths associated with each individual clock. 
+
+
+
+<a name=performanceSummary11></a>Performance Summary</a>
+*******************
+
+
+Worst slack in design: 10.439
+
+                          Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock            Frequency     Frequency     Period        Period        Slack      Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------
+brainfuck_uP|bfup_clk     50.0 MHz      104.6 MHz     20.000        9.561         10.439     inferred     Inferred_clkgroup_0
+=============================================================================================================================
+
+
+
+
+
+<a name=clockRelationships12></a>Clock Relationships</a>
+*******************
+
+Clocks                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------
+Starting               Ending                 |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------
+brainfuck_uP|bfup_clk  brainfuck_uP|bfup_clk  |  20.000      10.439  |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+<a name=interfaceInfo13></a>Interface Information </a>
+*********************
+
+No IO constraint found
+
+
+
+====================================
+<a name=clockReport14></a>Detailed Report for Clock: brainfuck_uP|bfup_clk</a>
+====================================
+
+
+
+<a name=startingSlack15></a>Starting Points with Worst Slack</a>
+********************************
+
+                Starting                                                      Arrival           
+Instance        Reference                 Type        Pin     Net             Time        Slack 
+                Clock                                                                           
+------------------------------------------------------------------------------------------------
+delay[0]        brainfuck_uP|bfup_clk     FD1S3IX     Q       delay[0]        1.108       10.439
+delay[3]        brainfuck_uP|bfup_clk     FD1S3IX     Q       delay[3]        1.044       10.503
+state[0]        brainfuck_uP|bfup_clk     FD1S3AY     Q       state[0]        1.276       11.391
+delay[1]        brainfuck_uP|bfup_clk     FD1S3IX     Q       delay[1]        1.044       11.519
+delay[2]        brainfuck_uP|bfup_clk     FD1S3JX     Q       delay[2]        1.044       11.519
+delay[4]        brainfuck_uP|bfup_clk     FD1S3JX     Q       delay[4]        1.044       11.519
+state[5]        brainfuck_uP|bfup_clk     FD1S3IX     Q       state[5]        1.188       12.129
+brackets[0]     brainfuck_uP|bfup_clk     FD1S3IX     Q       brackets[0]     1.108       13.072
+brackets[5]     brainfuck_uP|bfup_clk     FD1S3IX     Q       brackets[5]     1.044       13.136
+brackets[8]     brainfuck_uP|bfup_clk     FD1S3IX     Q       brackets[8]     1.044       13.136
+================================================================================================
+
+
+<a name=endingSlack16></a>Ending Points with Worst Slack</a>
+******************************
+
+                 Starting                                                               Required           
+Instance         Reference                 Type         Pin     Net                     Time         Slack 
+                 Clock                                                                                     
+-----------------------------------------------------------------------------------------------------------
+acc_0io[7]       brainfuck_uP|bfup_clk     OFS1P3IX     D       acc_9[7]                20.089       10.439
+brackets[17]     brainfuck_uP|bfup_clk     FD1S3IX      D       un1_brackets_17[17]     19.894       10.880
+brackets[15]     brainfuck_uP|bfup_clk     FD1S3IX      D       un1_brackets_17[15]     19.894       11.023
+brackets[16]     brainfuck_uP|bfup_clk     FD1S3IX      D       un1_brackets_17[16]     19.894       11.023
+p[15]            brainfuck_uP|bfup_clk     FD1S3IX      D       un1_p_cry_15_0_S0       19.894       11.027
+p[16]            brainfuck_uP|bfup_clk     FD1S3IX      D       un1_p_cry_15_0_S1       19.894       11.027
+brackets[13]     brainfuck_uP|bfup_clk     FD1S3IX      D       un1_brackets_17[13]     19.894       11.166
+brackets[14]     brainfuck_uP|bfup_clk     FD1S3IX      D       un1_brackets_17[14]     19.894       11.166
+p[13]            brainfuck_uP|bfup_clk     FD1S3IX      D       un1_p_cry_13_0_S0       19.894       11.170
+p[14]            brainfuck_uP|bfup_clk     FD1S3IX      D       un1_p_cry_13_0_S1       19.894       11.170
+===========================================================================================================
+
+
+
+<a name=worstPaths17></a>Worst Path Information</a>
+<a href="C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.0\brainfuck_uP\synlog\brainfuck_uP_brainfuck_uP_fpga_mapper.srr:srsfC:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.0\brainfuck_uP\brainfuck_uP_brainfuck_uP.srs:fp:16430:18860:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      20.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         20.089
+
+    - Propagation time:                      9.650
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     10.439
+
+    Number of logic level(s):                8
+    Starting point:                          delay[0] / Q
+    Ending point:                            acc_0io[7] / D
+    The start point is clocked by            brainfuck_uP|bfup_clk [rising] on pin CK
+    The end   point is clocked by            brainfuck_uP|bfup_clk [rising] on pin SCLK
+
+Instance / Net                         Pin      Pin               Arrival     No. of    
+Name                      Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+delay[0]                  FD1S3IX      Q        Out     1.108     1.108       -         
+delay[0]                  Net          -        -       -         -           3         
+delay_RNIH8OL[3]          ORCALUT4     A        In      0.000     1.108       -         
+delay_RNIH8OL[3]          ORCALUT4     Z        Out     1.017     2.125       -         
+delay8_i_0_o2_1           Net          -        -       -         -           1         
+delay_RNITNCM1[1]         ORCALUT4     A        In      0.000     2.125       -         
+delay_RNITNCM1[1]         ORCALUT4     Z        Out     1.329     3.453       -         
+N_66                      Net          -        -       -         -           21        
+acc_1_sqmuxa              ORCALUT4     A        In      0.000     3.453       -         
+acc_1_sqmuxa              ORCALUT4     Z        Out     1.233     4.686       -         
+acc_1_sqmuxa              Net          -        -       -         -           6         
+pData_pad_RNIA3BI[2]      ORCALUT4     A        In      0.000     4.686       -         
+pData_pad_RNIA3BI[2]      ORCALUT4     Z        Out     1.089     5.775       -         
+CO2                       Net          -        -       -         -           2         
+pData_pad_RNILLDC2[3]     ORCALUT4     B        In      0.000     5.775       -         
+pData_pad_RNILLDC2[3]     ORCALUT4     Z        Out     1.153     6.928       -         
+CO3                       Net          -        -       -         -           3         
+pData_pad_RNIVJ3T2[5]     ORCALUT4     A        In      0.000     6.928       -         
+pData_pad_RNIVJ3T2[5]     ORCALUT4     Z        Out     1.089     8.017       -         
+CO5                       Net          -        -       -         -           2         
+acc_9_RNO[7]              ORCALUT4     A        In      0.000     8.017       -         
+acc_9_RNO[7]              ORCALUT4     Z        Out     1.017     9.033       -         
+N_24                      Net          -        -       -         -           1         
+acc_9[7]                  ORCALUT4     A        In      0.000     9.033       -         
+acc_9[7]                  ORCALUT4     Z        Out     0.617     9.650       -         
+acc_9[7]                  Net          -        -       -         -           1         
+acc_0io[7]                OFS1P3IX     D        In      0.000     9.650       -         
+========================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      20.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         20.089
+
+    - Propagation time:                      9.586
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 10.503
+
+    Number of logic level(s):                8
+    Starting point:                          delay[3] / Q
+    Ending point:                            acc_0io[7] / D
+    The start point is clocked by            brainfuck_uP|bfup_clk [rising] on pin CK
+    The end   point is clocked by            brainfuck_uP|bfup_clk [rising] on pin SCLK
+
+Instance / Net                         Pin      Pin               Arrival     No. of    
+Name                      Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+delay[3]                  FD1S3IX      Q        Out     1.044     1.044       -         
+delay[3]                  Net          -        -       -         -           2         
+delay_RNIH8OL[3]          ORCALUT4     B        In      0.000     1.044       -         
+delay_RNIH8OL[3]          ORCALUT4     Z        Out     1.017     2.061       -         
+delay8_i_0_o2_1           Net          -        -       -         -           1         
+delay_RNITNCM1[1]         ORCALUT4     A        In      0.000     2.061       -         
+delay_RNITNCM1[1]         ORCALUT4     Z        Out     1.329     3.389       -         
+N_66                      Net          -        -       -         -           21        
+acc_1_sqmuxa              ORCALUT4     A        In      0.000     3.389       -         
+acc_1_sqmuxa              ORCALUT4     Z        Out     1.233     4.622       -         
+acc_1_sqmuxa              Net          -        -       -         -           6         
+pData_pad_RNIA3BI[2]      ORCALUT4     A        In      0.000     4.622       -         
+pData_pad_RNIA3BI[2]      ORCALUT4     Z        Out     1.089     5.711       -         
+CO2                       Net          -        -       -         -           2         
+pData_pad_RNILLDC2[3]     ORCALUT4     B        In      0.000     5.711       -         
+pData_pad_RNILLDC2[3]     ORCALUT4     Z        Out     1.153     6.864       -         
+CO3                       Net          -        -       -         -           3         
+pData_pad_RNIVJ3T2[5]     ORCALUT4     A        In      0.000     6.864       -         
+pData_pad_RNIVJ3T2[5]     ORCALUT4     Z        Out     1.089     7.953       -         
+CO5                       Net          -        -       -         -           2         
+acc_9_RNO[7]              ORCALUT4     A        In      0.000     7.953       -         
+acc_9_RNO[7]              ORCALUT4     Z        Out     1.017     8.969       -         
+N_24                      Net          -        -       -         -           1         
+acc_9[7]                  ORCALUT4     A        In      0.000     8.969       -         
+acc_9[7]                  ORCALUT4     Z        Out     0.617     9.586       -         
+acc_9[7]                  Net          -        -       -         -           1         
+acc_0io[7]                OFS1P3IX     D        In      0.000     9.586       -         
+========================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      20.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         19.894
+
+    - Propagation time:                      9.014
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 10.880
+
+    Number of logic level(s):                13
+    Starting point:                          delay[0] / Q
+    Ending point:                            brackets[17] / D
+    The start point is clocked by            brainfuck_uP|bfup_clk [rising] on pin CK
+    The end   point is clocked by            brainfuck_uP|bfup_clk [rising] on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+delay[0]                     FD1S3IX      Q        Out     1.108     1.108       -         
+delay[0]                     Net          -        -       -         -           3         
+delay_RNIH8OL[3]             ORCALUT4     A        In      0.000     1.108       -         
+delay_RNIH8OL[3]             ORCALUT4     Z        Out     1.017     2.125       -         
+delay8_i_0_o2_1              Net          -        -       -         -           1         
+delay_RNITNCM1[1]            ORCALUT4     A        In      0.000     2.125       -         
+delay_RNITNCM1[1]            ORCALUT4     Z        Out     1.329     3.453       -         
+N_66                         Net          -        -       -         -           21        
+un1_state_21                 ORCALUT4     A        In      0.000     3.453       -         
+un1_state_21                 ORCALUT4     Z        Out     1.325     4.778       -         
+un1_state_21                 Net          -        -       -         -           20        
+un1_brackets_17_cry_0_0      CCU2D        C1       In      0.000     4.778       -         
+un1_brackets_17_cry_0_0      CCU2D        COUT     Out     1.544     6.323       -         
+un1_brackets_17_cry_0        Net          -        -       -         -           1         
+un1_brackets_17_cry_1_0      CCU2D        CIN      In      0.000     6.323       -         
+un1_brackets_17_cry_1_0      CCU2D        COUT     Out     0.143     6.465       -         
+un1_brackets_17_cry_2        Net          -        -       -         -           1         
+un1_brackets_17_cry_3_0      CCU2D        CIN      In      0.000     6.465       -         
+un1_brackets_17_cry_3_0      CCU2D        COUT     Out     0.143     6.608       -         
+un1_brackets_17_cry_4        Net          -        -       -         -           1         
+un1_brackets_17_cry_5_0      CCU2D        CIN      In      0.000     6.608       -         
+un1_brackets_17_cry_5_0      CCU2D        COUT     Out     0.143     6.751       -         
+un1_brackets_17_cry_6        Net          -        -       -         -           1         
+un1_brackets_17_cry_7_0      CCU2D        CIN      In      0.000     6.751       -         
+un1_brackets_17_cry_7_0      CCU2D        COUT     Out     0.143     6.894       -         
+un1_brackets_17_cry_8        Net          -        -       -         -           1         
+un1_brackets_17_cry_9_0      CCU2D        CIN      In      0.000     6.894       -         
+un1_brackets_17_cry_9_0      CCU2D        COUT     Out     0.143     7.037       -         
+un1_brackets_17_cry_10       Net          -        -       -         -           1         
+un1_brackets_17_cry_11_0     CCU2D        CIN      In      0.000     7.037       -         
+un1_brackets_17_cry_11_0     CCU2D        COUT     Out     0.143     7.179       -         
+un1_brackets_17_cry_12       Net          -        -       -         -           1         
+un1_brackets_17_cry_13_0     CCU2D        CIN      In      0.000     7.179       -         
+un1_brackets_17_cry_13_0     CCU2D        COUT     Out     0.143     7.322       -         
+un1_brackets_17_cry_14       Net          -        -       -         -           1         
+un1_brackets_17_cry_15_0     CCU2D        CIN      In      0.000     7.322       -         
+un1_brackets_17_cry_15_0     CCU2D        COUT     Out     0.143     7.465       -         
+un1_brackets_17_cry_16       Net          -        -       -         -           1         
+un1_brackets_17_s_17_0       CCU2D        CIN      In      0.000     7.465       -         
+un1_brackets_17_s_17_0       CCU2D        S0       Out     1.549     9.014       -         
+un1_brackets_17[17]          Net          -        -       -         -           1         
+brackets[17]                 FD1S3IX      D        In      0.000     9.014       -         
+===========================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 154MB peak: 156MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 154MB peak: 156MB)
+
+---------------------------------------
+<a name=resourceUsage18></a>Resource Usage Report</a>
+Part: lcmxo2_640hc-4
+
+Register bits: 88 of 640 (14%)
+PIC Latch:       0
+I/O cells:       74
+
+
+Details:
+BB:             8
+CCU2D:          32
+FD1P3IX:        1
+FD1P3JX:        1
+FD1S3AX:        1
+FD1S3AY:        1
+FD1S3IX:        61
+FD1S3JX:        3
+GSR:            1
+IB:             19
+INV:            2
+OB:             29
+OBZ:            18
+OFS1P3IX:       17
+OFS1P3JX:       3
+ORCALUT4:       85
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 34MB peak: 156MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Mon Dec 21 21:56:02 2020
+
+###########################################################]
+
+</pre></samp></body></html>

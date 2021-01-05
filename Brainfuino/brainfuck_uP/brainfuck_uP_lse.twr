@@ -1,0 +1,177 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Jan 05 11:21:01 2021
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     brainfuck_uP
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 12.500000 -name clk0 [get_nets bfup_clk_c]
+            312 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.298ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             pc__i0  (from bfup_clk_c +)
+   Destination:    FD1S3IX    D              pc__i17  (to bfup_clk_c +)
+
+   Delay:                  12.042ns  (42.3% logic, 57.7% route), 15 logic levels.
+
+ Constraint Details:
+
+     12.042ns data_path pc__i0 to pc__i17 meets
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 0.298ns
+
+ Path Details: pc__i0 to pc__i17
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              pc__i0 (from bfup_clk_c)
+Route         6   e 1.515                                  pc[0]
+A1_TO_FCO   ---     0.827           A[2] to COUT           sub_124_add_2_1
+Route         1   e 0.020                                  n5519
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_124_add_2_3
+Route         1   e 0.020                                  n5520
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_124_add_2_5
+Route         1   e 0.020                                  n5521
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_124_add_2_7
+Route         1   e 0.020                                  n5522
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_124_add_2_9
+Route         1   e 0.020                                  n5523
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_124_add_2_11
+Route         1   e 0.020                                  n5524
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_124_add_2_13
+Route         1   e 0.020                                  n5525
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_124_add_2_15
+Route         1   e 0.020                                  n5526
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_124_add_2_17
+Route         1   e 0.020                                  n5527
+FCI_TO_F    ---     0.598            CIN to S[2]           sub_124_add_2_19
+Route         2   e 1.486                                  n448
+LUT4        ---     0.493              C to Z              mux_755_i18_3_lut_4_lut
+Route         1   e 0.941                                  n3212
+LUT4        ---     0.493              A to Z              mux_879_i18_3_lut
+Route         1   e 0.941                                  n2245
+LUT4        ---     0.493              B to Z              i1_4_lut_adj_121
+Route         1   e 0.941                                  n6584
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_100
+Route         1   e 0.941                                  pc_17__N_101[17]
+                  --------
+                   12.042  (42.3% logic, 57.7% route), 15 logic levels.
+
+
+Passed:  The following path meets requirements by 0.417ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             brackets__i1  (from bfup_clk_c +)
+   Destination:    FD1S3IX    D              brackets__i1  (to bfup_clk_c +)
+
+   Delay:                  11.923ns  (28.5% logic, 71.5% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.923ns data_path brackets__i1 to brackets__i1 meets
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 0.417ns
+
+ Path Details: brackets__i1 to brackets__i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              brackets__i1 (from bfup_clk_c)
+Route         4   e 1.398                                  brackets[1]
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_86
+Route         2   e 1.141                                  n31_adj_88
+LUT4        ---     0.493              A to Z              i1_2_lut_adj_124
+Route         1   e 0.941                                  n6784
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_122
+Route         4   e 1.340                                  n35
+LUT4        ---     0.493              B to Z              i1997_3_lut_rep_100
+Route        17   e 1.819                                  n7496
+LUT4        ---     0.493              D to Z              mux_839_i2_4_lut
+Route         1   e 0.941                                  n3034
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_143
+Route         1   e 0.941                                  brackets_17__N_137[1]
+                  --------
+                   11.923  (28.5% logic, 71.5% route), 7 logic levels.
+
+
+Passed:  The following path meets requirements by 0.417ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             brackets__i1  (from bfup_clk_c +)
+   Destination:    FD1S3IX    D              brackets__i2  (to bfup_clk_c +)
+
+   Delay:                  11.923ns  (28.5% logic, 71.5% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.923ns data_path brackets__i1 to brackets__i2 meets
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 0.417ns
+
+ Path Details: brackets__i1 to brackets__i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              brackets__i1 (from bfup_clk_c)
+Route         4   e 1.398                                  brackets[1]
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_86
+Route         2   e 1.141                                  n31_adj_88
+LUT4        ---     0.493              A to Z              i1_2_lut_adj_124
+Route         1   e 0.941                                  n6784
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_122
+Route         4   e 1.340                                  n35
+LUT4        ---     0.493              B to Z              i1997_3_lut_rep_100
+Route        17   e 1.819                                  n7496
+LUT4        ---     0.493              D to Z              mux_839_i3_4_lut
+Route         1   e 0.941                                  n3033
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_97
+Route         1   e 0.941                                  brackets_17__N_137[2]
+                  --------
+                   11.923  (28.5% logic, 71.5% route), 7 logic levels.
+
+Report: 12.202 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 12.500000 -name    |             |             |
+clk0 [get_nets bfup_clk_c]              |    12.500 ns|    12.202 ns|    15  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  4818 paths, 627 nets, and 1515 connections (69.1% coverage)
+
+
+Peak memory: 63934464 bytes, TRCE: 299008 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

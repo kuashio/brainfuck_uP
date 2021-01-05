@@ -1,0 +1,9 @@
+3
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 3 "./../../brainfuck_uP/source/brainfuck_uP.v" 35 brainfuck_uP
+~A 1 "./../../brainfuck_uP/source/brainfuck_uP.v" 35 brainfuck_uP
+~M 3 "./../../brainfuck_uP/source/memory.v" 22 memory
+~A 1 "./../../brainfuck_uP/source/memory.v" 22 memory
+~M 3 "./../../brainfuck_uP/source/testing_brainfuck_uP.v" 21 testing_brainfuck_uP
+~A 1 "./../../brainfuck_uP/source/testing_brainfuck_uP.v" 21 testing_brainfuck_uP

@@ -1,0 +1,27 @@
+Selecting top level module brainfuck_uP
+@N: CG364 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":34:7:34:18|Synthesizing module brainfuck_uP in library work.
+Running optimization stage 1 on brainfuck_uP .......
+Running optimization stage 2 on brainfuck_uP .......
+@N: CL189 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":80:1:80:6|Register bit delay[7] is always 0.
+@N: CL189 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":80:1:80:6|Register bit port_cnt[7] is always 0.
+@W: CL260 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":80:1:80:6|Pruning register bit 7 of port_cnt[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":80:1:80:6|Pruning register bit 7 of delay[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":80:1:80:6|Register bit delay[6] is always 0.
+@W: CL260 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":80:1:80:6|Pruning register bit 6 of delay[6:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":80:1:80:6|Register bit delay[5] is always 0.
+@W: CL260 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":80:1:80:6|Pruning register bit 5 of delay[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\source\brainfuck_uP.v":80:1:80:6|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 7 reachable states with original encodings of:
+   0000001
+   0000010
+   0000100
+   0001000
+   0010000
+   0100000
+   1000000
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\synwork\layer0.rt.csv
+

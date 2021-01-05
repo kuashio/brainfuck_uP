@@ -1,0 +1,14 @@
+[Version]
+Version=10.5
+[Designs]
+testing_Brainfuino=testing_Brainfuino.adf
+[Settings]
+Active=testing_Brainfuino
+[Expand]
+testing_brainfuino=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

@@ -1,0 +1,20 @@
+----------------------------------------------------------------------
+Report for cell brainfuck_uP.TECH
+Register bits:  106 of 877 (12.087%)
+I/O cells:      74
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 BB         8          100.0
+                              CCU2D        67          100.0
+                            FD1P3AX         1          100.0
+                            FD1P3IX        30          100.0
+                            FD1P3JX         2          100.0
+                            FD1S3IX        67          100.0
+                            FD1S3JX         6          100.0
+                                GSR         1          100.0
+                                 IB        19          100.0
+                               LUT4       430          100.0
+                                 OB        29          100.0
+                                OBZ        18          100.0
+                              PFUMX         4          100.0
+                              TOTAL       682

@@ -1,0 +1,121 @@
+[ START MERGED ]
+n7524 reset_c
+n3500 drive_bus
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+add_114_19/S1
+add_114_19/CO
+add_151_17/S1
+add_151_17/CO
+add_826_9/CO
+sub_115_add_2_1/S0
+sub_115_add_2_1/CI
+sub_85_add_2_1/S0
+sub_85_add_2_1/CI
+sub_85_add_2_9/S1
+sub_85_add_2_9/CO
+add_88_1/S0
+add_88_1/CI
+add_832_1/S1
+add_832_1/S0
+add_832_1/CI
+sub_124_add_2_19/S1
+sub_124_add_2_19/CO
+add_114_1/S0
+add_114_1/CI
+add_832_19/CO
+sub_115_add_2_17/CO
+add_151_1/S0
+add_151_1/CI
+add_88_17/CO
+add_826_1/S1
+add_826_1/S0
+add_826_1/CI
+sub_124_add_2_1/S0
+sub_124_add_2_1/CI
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.11.2.446 -- WARNING: Map write only section -- Tue Jan 05 11:21:03 2021
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "pData[7]" SITE "39" ;
+LOCATE COMP "pData[6]" SITE "38" ;
+LOCATE COMP "pData[5]" SITE "37" ;
+LOCATE COMP "pData[4]" SITE "36" ;
+LOCATE COMP "pData[3]" SITE "35" ;
+LOCATE COMP "pData[2]" SITE "34" ;
+LOCATE COMP "pData[1]" SITE "32" ;
+LOCATE COMP "pData[0]" SITE "31" ;
+LOCATE COMP "portRD" SITE "77" ;
+LOCATE COMP "portWR" SITE "78" ;
+LOCATE COMP "outPort[7]" SITE "88" ;
+LOCATE COMP "outPort[6]" SITE "87" ;
+LOCATE COMP "outPort[5]" SITE "86" ;
+LOCATE COMP "outPort[4]" SITE "85" ;
+LOCATE COMP "outPort[3]" SITE "84" ;
+LOCATE COMP "outPort[2]" SITE "83" ;
+LOCATE COMP "outPort[1]" SITE "82" ;
+LOCATE COMP "outPort[0]" SITE "81" ;
+LOCATE COMP "p[16]" SITE "17" ;
+LOCATE COMP "p[15]" SITE "18" ;
+LOCATE COMP "p[14]" SITE "16" ;
+LOCATE COMP "p[13]" SITE "20" ;
+LOCATE COMP "p[12]" SITE "15" ;
+LOCATE COMP "p[11]" SITE "25" ;
+LOCATE COMP "p[10]" SITE "40" ;
+LOCATE COMP "p[9]" SITE "24" ;
+LOCATE COMP "p[8]" SITE "21" ;
+LOCATE COMP "p[7]" SITE "14" ;
+LOCATE COMP "p[6]" SITE "13" ;
+LOCATE COMP "p[5]" SITE "12" ;
+LOCATE COMP "p[4]" SITE "10" ;
+LOCATE COMP "p[3]" SITE "27" ;
+LOCATE COMP "p[2]" SITE "28" ;
+LOCATE COMP "p[1]" SITE "29" ;
+LOCATE COMP "p[0]" SITE "30" ;
+LOCATE COMP "RD" SITE "41" ;
+LOCATE COMP "WR" SITE "19" ;
+LOCATE COMP "pc_pins[17]" SITE "66" ;
+LOCATE COMP "pc_pins[16]" SITE "67" ;
+LOCATE COMP "pc_pins[15]" SITE "68" ;
+LOCATE COMP "pc_pins[14]" SITE "65" ;
+LOCATE COMP "pc_pins[13]" SITE "64" ;
+LOCATE COMP "pc_pins[12]" SITE "69" ;
+LOCATE COMP "pc_pins[11]" SITE "60" ;
+LOCATE COMP "pc_pins[10]" SITE "42" ;
+LOCATE COMP "pc_pins[9]" SITE "62" ;
+LOCATE COMP "pc_pins[8]" SITE "63" ;
+LOCATE COMP "pc_pins[7]" SITE "70" ;
+LOCATE COMP "pc_pins[6]" SITE "71" ;
+LOCATE COMP "pc_pins[5]" SITE "74" ;
+LOCATE COMP "pc_pins[4]" SITE "75" ;
+LOCATE COMP "pc_pins[3]" SITE "51" ;
+LOCATE COMP "pc_pins[2]" SITE "52" ;
+LOCATE COMP "pc_pins[1]" SITE "53" ;
+LOCATE COMP "pc_pins[0]" SITE "54" ;
+LOCATE COMP "inPort[7]" SITE "96" ;
+LOCATE COMP "inPort[6]" SITE "97" ;
+LOCATE COMP "inPort[5]" SITE "98" ;
+LOCATE COMP "inPort[4]" SITE "99" ;
+LOCATE COMP "inPort[3]" SITE "1" ;
+LOCATE COMP "inPort[2]" SITE "2" ;
+LOCATE COMP "inPort[1]" SITE "3" ;
+LOCATE COMP "inPort[0]" SITE "4" ;
+LOCATE COMP "incoming" SITE "76" ;
+LOCATE COMP "bfup_clk" SITE "8" ;
+LOCATE COMP "reset" SITE "7" ;
+LOCATE COMP "instruction[7]" SITE "43" ;
+LOCATE COMP "instruction[6]" SITE "45" ;
+LOCATE COMP "instruction[5]" SITE "47" ;
+LOCATE COMP "instruction[4]" SITE "48" ;
+LOCATE COMP "instruction[3]" SITE "49" ;
+LOCATE COMP "instruction[2]" SITE "59" ;
+LOCATE COMP "instruction[1]" SITE "58" ;
+LOCATE COMP "instruction[0]" SITE "57" ;
+FREQUENCY NET "bfup_clk_c" 100.000000 MHz PAR_ADJ 20.000000 ;
+USE PRIMARY NET "bfup_clk_c" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

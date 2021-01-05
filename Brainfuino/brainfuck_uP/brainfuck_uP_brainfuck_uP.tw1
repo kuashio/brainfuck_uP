@@ -1,0 +1,282 @@
+
+Loading design for application trce from file brainfuck_up_brainfuck_up_map.ncd.
+Design name: brainfuck_uP
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-640HC
+Package:     TQFP100
+Performance: 4
+Loading device for application trce from file 'xo2c640.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.2.446
+Tue Jan 05 11:21:04 2021
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o brainfuck_uP_brainfuck_uP.tw1 -gui -msgset C:/Users/kuash/OneDrive/Documents/brainfuck/Brainfuino/github repo/brainfuck_uP/Brainfuino/promote.xml brainfuck_uP_brainfuck_uP_map.ncd brainfuck_uP_brainfuck_uP.prf 
+Design file:     brainfuck_up_brainfuck_up_map.ncd
+Preference file: brainfuck_up_brainfuck_up.prf
+Device,speed:    LCMXO2-640HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    2.375 V
+
+
+
+================================================================================
+Preference: FREQUENCY NET "bfup_clk_c" 100.000000 MHz PAR_ADJ 20.000000 ;
+            4096 items scored, 88 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.268ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pc__i0  (from bfup_clk_c +)
+   Destination:    FF         Data in        pc__i17  (to bfup_clk_c +)
+
+   Delay:              10.103ns  (51.0% logic, 49.0% route), 15 logic levels.
+
+ Constraint Details:
+
+     10.103ns physical path delay SLICE_99 to SLICE_112 exceeds
+     10.000ns delay constraint less
+      0.165ns DIN_SET requirement (totaling 9.835ns) by 0.268ns
+
+ Physical Path Details:
+
+      Data path SLICE_99 to SLICE_112:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.451   SLICE_99.CLK to    SLICE_99.Q0 SLICE_99 (from bfup_clk_c)
+ROUTE         6   e 1.234    SLICE_99.Q0 to     SLICE_6.A1 pc_0
+C1TOFCO_DE  ---     0.887     SLICE_6.A1 to    SLICE_6.FCO SLICE_6
+ROUTE         1   e 0.001    SLICE_6.FCO to    SLICE_3.FCI n5519
+FCITOFCO_D  ---     0.161    SLICE_3.FCI to    SLICE_3.FCO SLICE_3
+ROUTE         1   e 0.001    SLICE_3.FCO to   SLICE_66.FCI n5520
+FCITOFCO_D  ---     0.161   SLICE_66.FCI to   SLICE_66.FCO SLICE_66
+ROUTE         1   e 0.001   SLICE_66.FCO to   SLICE_58.FCI n5521
+FCITOFCO_D  ---     0.161   SLICE_58.FCI to   SLICE_58.FCO SLICE_58
+ROUTE         1   e 0.001   SLICE_58.FCO to   SLICE_54.FCI n5522
+FCITOFCO_D  ---     0.161   SLICE_54.FCI to   SLICE_54.FCO SLICE_54
+ROUTE         1   e 0.001   SLICE_54.FCO to   SLICE_38.FCI n5523
+FCITOFCO_D  ---     0.161   SLICE_38.FCI to   SLICE_38.FCO SLICE_38
+ROUTE         1   e 0.001   SLICE_38.FCO to   SLICE_37.FCI n5524
+FCITOFCO_D  ---     0.161   SLICE_37.FCI to   SLICE_37.FCO SLICE_37
+ROUTE         1   e 0.001   SLICE_37.FCO to   SLICE_35.FCI n5525
+FCITOFCO_D  ---     0.161   SLICE_35.FCI to   SLICE_35.FCO SLICE_35
+ROUTE         1   e 0.001   SLICE_35.FCO to   SLICE_31.FCI n5526
+FCITOFCO_D  ---     0.161   SLICE_31.FCI to   SLICE_31.FCO SLICE_31
+ROUTE         1   e 0.001   SLICE_31.FCO to   SLICE_30.FCI n5527
+FCITOF0_DE  ---     0.583   SLICE_30.FCI to    SLICE_30.F0 SLICE_30
+ROUTE         2   e 1.234    SLICE_30.F0 to   SLICE_132.C0 n448
+CTOOFX_DEL  ---     0.719   SLICE_132.C0 to SLICE_132.OFX0 SLICE_132
+ROUTE         1   e 0.001 SLICE_132.OFX0 to  SLICE_133.FXA mux_879_i18_3_lut_0_f5a
+FXTOOFX_DE  ---     0.240  SLICE_133.FXA to SLICE_133.OFX1 SLICE_133
+ROUTE         1   e 1.234 SLICE_133.OFX1 to   SLICE_218.B0 n2245
+CTOF_DEL    ---     0.494   SLICE_218.B0 to   SLICE_218.F0 SLICE_218
+ROUTE         1   e 1.234   SLICE_218.F0 to   SLICE_112.A0 n6584
+CTOF_DEL    ---     0.494   SLICE_112.A0 to   SLICE_112.F0 SLICE_112
+ROUTE         1   e 0.001   SLICE_112.F0 to  SLICE_112.DI0 pc_17_N_101_17 (to bfup_clk_c)
+                  --------
+                   10.103   (51.0% logic, 49.0% route), 15 logic levels.
+
+Warning:  97.390MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "bfup_clk_c" 100.000000   |             |             |
+MHz PAR_ADJ 20.000000 ;                 |  100.000 MHz|   97.390 MHz|  15 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+n6772                                   |       1|      39|     44.32%
+                                        |        |        |
+n33_adj_81                              |       2|      39|     44.32%
+                                        |        |        |
+n3930                                   |      18|      39|     44.32%
+                                        |        |        |
+n6848                                   |       1|      36|     40.91%
+                                        |        |        |
+n6860                                   |       1|      36|     40.91%
+                                        |        |        |
+n6866                                   |       1|      36|     40.91%
+                                        |        |        |
+n1_adj_26                               |       4|      36|     40.91%
+                                        |        |        |
+n9_adj_84                               |       8|      32|     36.36%
+                                        |        |        |
+brackets_15                             |       3|      13|     14.77%
+                                        |        |        |
+brackets_16                             |       3|      13|     14.77%
+                                        |        |        |
+brackets_11                             |       3|      13|     14.77%
+                                        |        |        |
+n6584                                   |       1|      11|     12.50%
+                                        |        |        |
+pc_17_N_101_17                          |       1|      11|     12.50%
+                                        |        |        |
+p_c_5                                   |       9|       9|     10.23%
+                                        |        |        |
+p_c_12                                  |       9|       9|     10.23%
+                                        |        |        |
+p_c_14                                  |       9|       9|     10.23%
+                                        |        |        |
+p_c_13                                  |       9|       9|     10.23%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: bfup_clk_c   Source: bfup_clk.PAD   Loads: 65
+   Covered under: FREQUENCY NET "bfup_clk_c" 100.000000 MHz PAR_ADJ 20.000000 ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 88  Score: 18397
+Cumulative negative slack: 18397
+
+Constraints cover 5560 paths, 1 nets, and 1512 connections (70.26% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.2.446
+Tue Jan 05 11:21:05 2021
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o brainfuck_uP_brainfuck_uP.tw1 -gui -msgset C:/Users/kuash/OneDrive/Documents/brainfuck/Brainfuino/github repo/brainfuck_uP/Brainfuino/promote.xml brainfuck_uP_brainfuck_uP_map.ncd brainfuck_uP_brainfuck_uP.prf 
+Design file:     brainfuck_up_brainfuck_up_map.ncd
+Preference file: brainfuck_up_brainfuck_up.prf
+Device,speed:    LCMXO2-640HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    2.375 V
+
+
+
+================================================================================
+Preference: FREQUENCY NET "bfup_clk_c" 100.000000 MHz PAR_ADJ 20.000000 ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.441ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              RD_293  (from bfup_clk_c +)
+   Destination:    FF         Data in        RD_293  (to bfup_clk_c +)
+
+   Delay:               0.428ns  (53.3% logic, 46.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.428ns physical path delay SLICE_68 to SLICE_68 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.441ns
+
+ Physical Path Details:
+
+      Data path SLICE_68 to SLICE_68:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133   SLICE_68.CLK to    SLICE_68.Q0 SLICE_68 (from bfup_clk_c)
+ROUTE         2   e 0.199    SLICE_68.Q0 to    SLICE_68.M0 RD_c
+MTOOFX_DEL  ---     0.095    SLICE_68.M0 to  SLICE_68.OFX0 SLICE_68
+ROUTE         1   e 0.001  SLICE_68.OFX0 to   SLICE_68.DI0 RD_N_227 (to bfup_clk_c)
+                  --------
+                    0.428   (53.3% logic, 46.7% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "bfup_clk_c" 100.000000   |             |             |
+MHz PAR_ADJ 20.000000 ;                 |     0.000 ns|     0.441 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: bfup_clk_c   Source: bfup_clk.PAD   Loads: 65
+   Covered under: FREQUENCY NET "bfup_clk_c" 100.000000 MHz PAR_ADJ 20.000000 ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 5560 paths, 1 nets, and 1518 connections (70.54% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 88 (setup), 0 (hold)
+Score: 18397 (setup), 0 (hold)
+Cumulative negative slack: 18397 (18397+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

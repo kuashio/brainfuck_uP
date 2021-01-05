@@ -1,0 +1,118 @@
+
+		#####  BEGIN RETIMING REPORT  #####
+
+Retiming summary : 33 registers retimed to 73
+
+Original and Pipelined registers replaced by retiming :
+		acc[0]
+		acc[1]
+		acc[2]
+		acc[3]
+		acc[4]
+		acc[5]
+		acc[6]
+		acc[7]
+		brackets[0]
+		brackets[1]
+		brackets[2]
+		brackets[3]
+		brackets[4]
+		brackets[5]
+		brackets[6]
+		brackets[7]
+		brackets[8]
+		brackets[9]
+		brackets[10]
+		brackets[11]
+		brackets[12]
+		brackets[13]
+		brackets[14]
+		brackets[15]
+		brackets[16]
+		brackets[17]
+		drive_bus
+		state[1]
+		state[2]
+		state[3]
+		state[4]
+		state[5]
+		state[6]
+
+New registers created by retiming :
+		acc_ret[0]
+		acc_ret[1]
+		acc_ret[2]
+		acc_ret[3]
+		acc_ret[4]
+		acc_ret[5]
+		acc_ret_0[0]
+		acc_ret_0[1]
+		acc_ret_0[2]
+		acc_ret_0[3]
+		acc_ret_1
+		acc_ret_7
+		acc_ret_10
+		acc_ret_10[0]
+		acc_ret_10[1]
+		acc_ret_10[2]
+		acc_ret_10[3]
+		acc_ret_10[4]
+		acc_ret_10[5]
+		acc_ret_10[6]
+		acc_ret_10[7]
+		acc_ret_11
+		acc_ret_13[5]
+		acc_ret_13_0[0]
+		acc_ret_13_0[4]
+		acc_ret_13_0[5]
+		acc_ret_13_1[0]
+		acc_ret_13_1[3]
+		acc_ret_13_2[0]
+		acc_ret_13_2[3]
+		acc_ret_13_4[0]
+		acc_ret_13_4[1]
+		acc_ret_15
+		acc_ret_28
+		acc_ret_29
+		brackets_ret_0
+		brackets_ret_1[0]
+		brackets_ret_1[1]
+		brackets_ret_1[2]
+		brackets_ret_1[3]
+		brackets_ret_1[4]
+		brackets_ret_1[5]
+		brackets_ret_1[6]
+		brackets_ret_1[7]
+		brackets_ret_1[8]
+		brackets_ret_1[9]
+		brackets_ret_1[10]
+		brackets_ret_1[11]
+		brackets_ret_1[12]
+		brackets_ret_1[13]
+		brackets_ret_1[14]
+		brackets_ret_1[15]
+		brackets_ret_1[16]
+		brackets_ret_1[17]
+		brackets_ret_19
+		drive_bus_ret
+		drive_bus_ret_0[0]
+		drive_bus_ret_0[1]
+		drive_bus_ret_0[2]
+		drive_bus_ret_0[3]
+		drive_bus_ret_0[4]
+		drive_bus_ret_0[5]
+		drive_bus_ret_0[6]
+		drive_bus_ret_0[7]
+		drive_bus_ret_8
+		port_cnt_ret
+		state_ret
+		state_ret_0
+		state_ret_1
+		state_ret_3
+		state_ret_5
+		state_ret_7
+		state_ret_9
+
+
+		#####   END RETIMING REPORT  #####
+

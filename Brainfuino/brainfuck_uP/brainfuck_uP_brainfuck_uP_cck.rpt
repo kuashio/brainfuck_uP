@@ -1,0 +1,154 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: VITTORIO
+
+Implementation : brainfuck_uP
+
+# Written on Sun Dec 27 19:59:38 2020
+
+##### DESIGN INFO #######################################################
+
+Top View:                "brainfuck_uP"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                  Ending                    |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+brainfuck_uP|bfup_clk     brainfuck_uP|bfup_clk     |     12.500           |     No paths         |     No paths         |     No paths                         
+===============================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:RD
+p:WR
+p:inPort[0]
+p:inPort[1]
+p:inPort[2]
+p:inPort[3]
+p:inPort[4]
+p:inPort[5]
+p:inPort[6]
+p:inPort[7]
+p:incoming
+p:instruction[0]
+p:instruction[1]
+p:instruction[2]
+p:instruction[3]
+p:instruction[4]
+p:instruction[5]
+p:instruction[6]
+p:instruction[7]
+p:outPort[0]
+p:outPort[1]
+p:outPort[2]
+p:outPort[3]
+p:outPort[4]
+p:outPort[5]
+p:outPort[6]
+p:outPort[7]
+p:pData[0] (bidir end point)
+p:pData[0] (bidir start point)
+p:pData[1] (bidir end point)
+p:pData[1] (bidir start point)
+p:pData[2] (bidir end point)
+p:pData[2] (bidir start point)
+p:pData[3] (bidir end point)
+p:pData[3] (bidir start point)
+p:pData[4] (bidir end point)
+p:pData[4] (bidir start point)
+p:pData[5] (bidir end point)
+p:pData[5] (bidir start point)
+p:pData[6] (bidir end point)
+p:pData[6] (bidir start point)
+p:pData[7] (bidir end point)
+p:pData[7] (bidir start point)
+p:p[0]
+p:p[1]
+p:p[2]
+p:p[3]
+p:p[4]
+p:p[5]
+p:p[6]
+p:p[7]
+p:p[8]
+p:p[9]
+p:p[10]
+p:p[11]
+p:p[12]
+p:p[13]
+p:p[14]
+p:p[15]
+p:p[16]
+p:pc_pins[0]
+p:pc_pins[1]
+p:pc_pins[2]
+p:pc_pins[3]
+p:pc_pins[4]
+p:pc_pins[5]
+p:pc_pins[6]
+p:pc_pins[7]
+p:pc_pins[8]
+p:pc_pins[9]
+p:pc_pins[10]
+p:pc_pins[11]
+p:pc_pins[12]
+p:pc_pins[13]
+p:pc_pins[14]
+p:pc_pins[15]
+p:pc_pins[16]
+p:pc_pins[17]
+p:portRD
+p:portWR
+p:reset
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

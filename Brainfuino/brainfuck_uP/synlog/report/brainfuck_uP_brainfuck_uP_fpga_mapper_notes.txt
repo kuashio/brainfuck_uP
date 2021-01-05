@@ -1,0 +1,13 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: FA113 :"c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.1\brainfuck_up\source\brainfuck_up.v":81:2:81:3|Pipelining module un1_pc[17:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"c:\users\kuash\onedrive\documents\brainfuck\brainfuck up\bfup 2020\lattice diamond projects\v 1.1\brainfuck_up\source\brainfuck_up.v":80:1:80:6|Pushed in register pc[17:0].
+@N: MF322 |Retiming summary: 33 registers retimed to 73 
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: C:\Users\kuash\OneDrive\Documents\brainfuck\BrainFuck uP\bfuP 2020\Lattice Diamond Projects\v 1.1\brainfuck_uP\brainfuck_uP_brainfuck_uP.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

@@ -1,0 +1,9 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="testing_Brainfuino" simType="Active-HDL">
+    <Source worklib="work" path="brainfuck_uP/source/brainfuck_uP.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="brainfuck_uP/source/memory.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="brainfuck_uP/source/testing_brainfuck_uP.v" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="testing_brainfuck_uP"/>
+</BaliSimProject>

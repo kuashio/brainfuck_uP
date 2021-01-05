@@ -1,0 +1,868 @@
+[[Info]]
+_PARENT: none
+_FAMILY: xo2c00
+_FILE_FORMAT: 1.00
+_DATA_VALUES: 1.00
+_STATUS: Advanced
+
+[[Project]]
+DesignName: brainfuck_uP
+Family: MachXO2
+Device: LCMXO2-640HC
+Package: TQFP100
+Operating: Commercial
+Version: 8.0
+Performance: -4
+PartName: LCMXO2-640HC-4TG100C
+
+[[Settings]]
+EstimationMode: Medium
+ProcessType: Typical
+SoftwareMode: Calculation
+TempAmbX: Ambient Temperature
+SectionY: Total Power
+SectionX: Vcc
+SectionLowerLimit: 0.0000
+SectionUpperLimit: 0.0000
+SectionResolution: 0.0000
+TempAmbY: Ambient Temperature
+TempAmbLowerLimit: -30.0000
+TempAmbUpperLimit: 115.0000
+TempAmbResolution: 29.0000
+FreqY: Total Power
+FreqX: No Clocks Found!
+FreqLowerLimit: 10.0000
+FreqUpperLimit: 100.0000
+FreqAmbResolution: 20.0000
+PowerMode: Normal
+DisableBandgap: false
+DisablePor: false
+DisableDll: false
+DisableOsc: false
+DisablePLL0: false
+DisablePLL1: false
+DisableInRd0: false
+DisableInRd1: false
+DisableInRd2: false
+DisableInRd3: false
+DisableInRd4: false
+DisableInRd5: false
+DisableInRd6: false
+DisableInRd7: false
+EnablePg0: false
+EnablePg1: false
+EnablePg2: false
+EnablePg3: false
+EnablePg4: false
+EnablePg5: false
+EnablePg6: false
+EnablePg7: false
+DisableLVDS: false
+DisableLVDS1: false
+DisableLVDS2: false
+DisableLVDS3: false
+DisableLVDS4: false
+DisableLVDS5: false
+DisableLVDS6: false
+DisableLVDS7: false
+DisableSlewrate0: false
+DisableSlewrate1: false
+DisableSlewrate2: false
+DisableSlewrate3: false
+DisableSlewrate4: false
+DisableSlewrate5: false
+
+[[Thermal]]
+Airflow: 200 LFM
+AmbientTemperature: 25
+CustomThetaSA: -1
+JunctionTemperature: 25.20
+MaxSafeAmbient: 84.66
+ThetaBA: 10.0
+ThetaCS: 0
+ThetaEffective: 16.65
+ThetaJA: 20.59
+ThetaJB: 12.88
+ThetaJC: 0
+ThetaSA: -1
+UserThetaBA: No
+UserThetaCS: No
+UserThetaEffective: No
+UserThetaJA: No
+UserThetaJB: No
+UserThetaJC: No
+UserThetaSA: No
+thetaBoard: Medium Board
+thetaHeatSink: No Heat Sink
+thetaOption: ThermalModels
+
+[[VDPM]]
+Supply = Voltage, DPM
+Vcc = 3.300, 1.00
+Vccio 3.3 = 3.300, 1.00
+Vccio 2.5 = 2.500, 1.00
+Vccio 1.8 = 1.800, 1.00
+Vccio 1.5 = 1.500, 1.00
+Vccio 1.2 = 1.200, 1.00
+
+[[Logic]]
+Clk = F, AF, LUT, RAM, RIPPLE, REG, X0, X1, X2, X6, ISB, ISBLUT, ISBCE, ISBLSR, ISBM, ISBCLK
+COMBINATORIAL = 0.0000^d^, 10.0000^d^, 340, 0, 53, 0, 271, 130, 521, 107, 519, 369, 6, 130, 14, 4
+bfup_clk_c = 8.0000, 10.0000^d^, 92, 0, 5, 90, 160, 73, 413, 71, 1292, 1212, 5, 0, 75, 66
+
+[[Clocks]]
+Clk = F, Duty, Pfeed, Ptrunk, Pspine, Ptap, Pbranch, Strunk, Sspine, Stap, Sbranch, Etb, Ebg, Elr
+COMBINATORIAL = 0.0000^d^, 100, 0, 0, 0, 0, 0, t4_1, c5_1_c13_1, r4_5, b_44, 0, 0, 0
+bfup_clk_c = 8.0000, 100, 0, 0, 0, 0, 0, t4_1, c5_1_c13_1, r4_5, b_46, 0, 0, 0
+
+[[Input Output]]
+Clk = _Type, _Mode, F, AF, IP, OP, PG, Cload, Bank, _ActualMode, _Pull, X0, X1, X2, X6, ISB
+COMBINATORIAL = LVCMOS33, none, 0.0000^d^, 10.0000^d^, 3, 0, OFF, 5, 1, none, NONE, 0, 0, 0, 0, 0
+COMBINATORIAL = LVCMOS33, none, 0.0000^d^, 10.0000^d^, 5, 0, OFF, 5, 2, none, NONE, 0, 0, 0, 0, 0
+COMBINATORIAL = LVCMOS33, none, 0.0000^d^, 10.0000^d^, 1, 0, OFF, 5, 3, none, DOWN, 0, 0, 0, 0, 0
+COMBINATORIAL = LVCMOS33, none, 0.0000^d^, 10.0000^d^, 4, 0, OFF, 5, 3, none, NONE, 0, 0, 0, 0, 0
+COMBINATORIAL = LVCMOS33, none, 0.0000^d^, 10.0000^d^, 5, 0, OFF, 5, 0, none, NONE, 0, 0, 0, 0, 0
+bfup_clk_c = LVCMOS25-4mA-SLEW:FAST, none, 8.0000, 10.0000^d^, 0, 10, N/A, 5, 0, none, NONE, 0, 0, 0, 0, 0
+bfup_clk_c = LVCMOS25-4mA-SLEW:FAST, none, 8.0000, 10.0000^d^, 0, 17, N/A, 5, 1, none, NONE, 0, 0, 0, 0, 0
+bfup_clk_c = LVCMOS25-4mA-SLEW:FAST, none, 8.0000, 10.0000^d^, 0, 13, N/A, 5, 3, none, NONE, 0, 0, 0, 0, 0
+bfup_clk_c = LVCMOS25-4mA-SLEW:FAST, none, 8.0000, 10.0000^d^, 0, 7, N/A, 5, 2, none, NONE, 0, 0, 0, 0, 0
+bfup_clk_c = LVCMOS33, none, 8.0000, 10.0000^d^, 1, 0, OFF, 5, 3, none, NONE, 0, 0, 0, 0, 0
+
+[[Bidi]]
+ClkInpName = _Type, _Mode, InpF, InpAF, Bidi, PG, ClkOutName, OutF, OutAF, Duty, Cload, Bank, _ActualMode, _Pull, X0, X1, X2, X6, ISB
+bfup_clk_c = LVCMOS25-4mA-SLEW:FAST, none, 8.0000, 10.0000^d^, 8, OFF, N/A, 0.0000^d^, 10.0000^d^, 50, 5, 2, none, NONE, 0, 0, 0, 0, 0
+
+[[Bank Voltage]]
+Bank = Voltage, InRD, LVDSO, PG
+0 = Vccio 2.5, No, No, OFF
+1 = Vccio 2.5, No, N/A, OFF
+2 = Vccio 2.5, No, N/A, OFF
+3 = Vccio 2.5, No, N/A, OFF
+
+[[Termination]]
+_Type = IP, OP, Bidi, Duty, Bank, Rth, Vth
+LVCMOS33 = 3, 0, 0, 0.0, 1, 1.0E12, 0
+LVCMOS33 = 5, 0, 0, 0.0, 2, 1.0E12, 0
+LVCMOS33 = 6, 0, 0, 0.0, 3, 1.0E12, 0
+LVCMOS33 = 5, 0, 0, 0.0, 0, 1.0E12, 0
+LVCMOS25-4mA-SLEW:FAST = 0, 10, 0, 0.0, 0, 1.0E12, 0
+LVCMOS25-4mA-SLEW:FAST = 0, 17, 0, 0.0, 1, 1.0E12, 0
+LVCMOS25-4mA-SLEW:FAST = 0, 13, 0, 0.0, 3, 1.0E12, 0
+LVCMOS25-4mA-SLEW:FAST = 0, 7, 8, 25.0, 2, 1.0E12, 0
+
+[[SP RAM]]
+Clk = EBR, F, AF, _Type, X0, X1, X2, X6, ISB
+
+[[DP RAM]]
+RdClk = RdF, RdAF, EBR, WrClk, WrF, WrAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[DP RAM True]]
+ClkA = aF, aAF, EBR, ClkB, bF, bAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[FIFO DC]]
+RdClk = RdF, RdAF, EBR, WrClk, WrF, WrAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[I2C1]]
+Clk = F, AF, I2C1
+
+[[I2C2]]
+Clk = F, AF, I2C2
+
+[[SPI]]
+Clk = F, AF, SPI
+
+[[TC]]
+Clk = F, AF, TC, WBUSED
+
+[[UFM]]
+Clk = F, AF, UFM
+
+[[WISHBONE]]
+Clk = F, AF, WISHBONE
+
+[[CLKDIV]]
+Clk = F, AF, CLKDIV
+
+[[CIBTEST]]
+CIBTEST = 
+0 = 
+
+[[MCLK]]
+STANDBY = Clk, F, AF, MCLK, MCLKF, SEDF
+No = _CLKNAME, 266.0000, 100.0000, 1, 2.0800, 2.0800
+
+[[POR]]
+STANDBY = 
+No = 
+
+[[BANDGAP]]
+STANDBY = 
+No = 
+
+[[JTAG]]
+Clk = F, AF, Input, Output
+COMBINATORIAL = 25.0000, 100.0000, 3, 1
+
+[[SED]]
+_Mode = SED, STATUS
+SEDFA = 0, Disabled
+
+[[PLL Clock]]
+Out = In
+
+[[Connections]]
+Clock = Comp, Type
+COMBINATORIAL = SLICE_0, 0
+bfup_clk_c = bfup_clk, 1
+bfup_clk_c = RD, 1
+bfup_clk_c = WR, 1
+bfup_clk_c = pData[0], 1
+bfup_clk_c = pData[1], 1
+bfup_clk_c = pData[2], 1
+bfup_clk_c = pData[3], 1
+bfup_clk_c = pData[4], 1
+bfup_clk_c = pData[5], 1
+bfup_clk_c = pData[6], 1
+bfup_clk_c = pData[7], 1
+bfup_clk_c = p[0], 1
+bfup_clk_c = p[1], 1
+bfup_clk_c = p[2], 1
+bfup_clk_c = p[3], 1
+bfup_clk_c = p[4], 1
+bfup_clk_c = p[5], 1
+bfup_clk_c = p[6], 1
+bfup_clk_c = p[7], 1
+bfup_clk_c = p[8], 1
+bfup_clk_c = p[9], 1
+bfup_clk_c = p[10], 1
+bfup_clk_c = p[11], 1
+bfup_clk_c = p[12], 1
+bfup_clk_c = p[13], 1
+bfup_clk_c = p[14], 1
+bfup_clk_c = p[15], 1
+bfup_clk_c = p[16], 1
+bfup_clk_c = pc_pins[0], 1
+bfup_clk_c = pc_pins[1], 1
+bfup_clk_c = pc_pins[2], 1
+bfup_clk_c = pc_pins[3], 1
+bfup_clk_c = pc_pins[4], 1
+bfup_clk_c = pc_pins[5], 1
+bfup_clk_c = pc_pins[6], 1
+bfup_clk_c = pc_pins[7], 1
+bfup_clk_c = pc_pins[8], 1
+bfup_clk_c = pc_pins[9], 1
+bfup_clk_c = pc_pins[10], 1
+bfup_clk_c = pc_pins[11], 1
+bfup_clk_c = pc_pins[12], 1
+bfup_clk_c = pc_pins[13], 1
+bfup_clk_c = pc_pins[14], 1
+bfup_clk_c = pc_pins[15], 1
+bfup_clk_c = pc_pins[16], 1
+bfup_clk_c = pc_pins[17], 1
+bfup_clk_c = portRD, 1
+bfup_clk_c = portWR, 1
+bfup_clk_c = outPort[6], 1
+bfup_clk_c = outPort[7], 1
+bfup_clk_c = outPort[2], 1
+bfup_clk_c = outPort[3], 1
+bfup_clk_c = outPort[0], 1
+bfup_clk_c = outPort[1], 1
+bfup_clk_c = outPort[4], 1
+bfup_clk_c = outPort[5], 1
+
+[[Hierarchical Connections]]
+Key = Name, Type
+SIGNAL = COMBINATORIAL, DUMMY
+INPUT = SLICE_0, SLICE
+INPUT = SLICE_1, SLICE
+INPUT = SLICE_2, SLICE
+INPUT = SLICE_3, SLICE
+INPUT = SLICE_4, SLICE
+INPUT = SLICE_5, SLICE
+INPUT = SLICE_6, SLICE
+INPUT = SLICE_7, SLICE
+INPUT = SLICE_9, SLICE
+INPUT = SLICE_10, SLICE
+INPUT = SLICE_12, SLICE
+INPUT = SLICE_15, SLICE
+INPUT = SLICE_16, SLICE
+INPUT = SLICE_17, SLICE
+INPUT = SLICE_18, SLICE
+INPUT = SLICE_19, SLICE
+INPUT = SLICE_20, SLICE
+INPUT = SLICE_21, SLICE
+INPUT = SLICE_22, SLICE
+INPUT = SLICE_23, SLICE
+INPUT = SLICE_24, SLICE
+INPUT = SLICE_25, SLICE
+INPUT = SLICE_27, SLICE
+INPUT = SLICE_28, SLICE
+INPUT = SLICE_29, SLICE
+INPUT = SLICE_30, SLICE
+INPUT = SLICE_31, SLICE
+INPUT = SLICE_32, SLICE
+INPUT = SLICE_33, SLICE
+INPUT = SLICE_34, SLICE
+INPUT = SLICE_35, SLICE
+INPUT = SLICE_36, SLICE
+INPUT = SLICE_37, SLICE
+INPUT = SLICE_38, SLICE
+INPUT = SLICE_39, SLICE
+INPUT = SLICE_40, SLICE
+INPUT = SLICE_41, SLICE
+INPUT = SLICE_42, SLICE
+INPUT = SLICE_43, SLICE
+INPUT = SLICE_44, SLICE
+INPUT = SLICE_45, SLICE
+INPUT = SLICE_46, SLICE
+INPUT = SLICE_47, SLICE
+INPUT = SLICE_48, SLICE
+INPUT = SLICE_49, SLICE
+INPUT = SLICE_50, SLICE
+INPUT = SLICE_51, SLICE
+INPUT = SLICE_52, SLICE
+INPUT = SLICE_53, SLICE
+INPUT = SLICE_54, SLICE
+INPUT = SLICE_55, SLICE
+INPUT = SLICE_56, SLICE
+INPUT = SLICE_57, SLICE
+INPUT = i41/SLICE_119, SLICE
+INPUT = i47/SLICE_120, SLICE
+INPUT = i3459/SLICE_121, SLICE
+INPUT = SLICE_122, SLICE
+INPUT = SLICE_123, SLICE
+INPUT = SLICE_124, SLICE
+INPUT = SLICE_125, SLICE
+INPUT = SLICE_126, SLICE
+INPUT = SLICE_127, SLICE
+INPUT = SLICE_128, SLICE
+INPUT = SLICE_129, SLICE
+INPUT = SLICE_130, SLICE
+INPUT = SLICE_131, SLICE
+INPUT = SLICE_132, SLICE
+INPUT = SLICE_133, SLICE
+INPUT = SLICE_134, SLICE
+INPUT = SLICE_135, SLICE
+INPUT = SLICE_136, SLICE
+INPUT = SLICE_137, SLICE
+INPUT = SLICE_138, SLICE
+INPUT = SLICE_139, SLICE
+INPUT = SLICE_140, SLICE
+INPUT = SLICE_141, SLICE
+INPUT = SLICE_142, SLICE
+INPUT = SLICE_143, SLICE
+INPUT = SLICE_144, SLICE
+INPUT = SLICE_145, SLICE
+INPUT = SLICE_146, SLICE
+INPUT = SLICE_147, SLICE
+INPUT = SLICE_148, SLICE
+INPUT = SLICE_149, SLICE
+INPUT = SLICE_150, SLICE
+INPUT = SLICE_151, SLICE
+INPUT = SLICE_152, SLICE
+INPUT = SLICE_153, SLICE
+INPUT = SLICE_154, SLICE
+INPUT = SLICE_155, SLICE
+INPUT = SLICE_156, SLICE
+INPUT = SLICE_157, SLICE
+INPUT = SLICE_158, SLICE
+INPUT = SLICE_159, SLICE
+INPUT = SLICE_160, SLICE
+INPUT = SLICE_161, SLICE
+INPUT = SLICE_162, SLICE
+INPUT = SLICE_163, SLICE
+INPUT = SLICE_164, SLICE
+INPUT = SLICE_165, SLICE
+INPUT = SLICE_166, SLICE
+INPUT = SLICE_167, SLICE
+INPUT = SLICE_168, SLICE
+INPUT = SLICE_169, SLICE
+INPUT = SLICE_170, SLICE
+INPUT = SLICE_171, SLICE
+INPUT = SLICE_172, SLICE
+INPUT = SLICE_173, SLICE
+INPUT = SLICE_174, SLICE
+INPUT = SLICE_175, SLICE
+INPUT = SLICE_176, SLICE
+INPUT = SLICE_177, SLICE
+INPUT = SLICE_178, SLICE
+INPUT = SLICE_179, SLICE
+INPUT = SLICE_180, SLICE
+INPUT = SLICE_181, SLICE
+INPUT = SLICE_182, SLICE
+INPUT = SLICE_183, SLICE
+INPUT = SLICE_184, SLICE
+INPUT = SLICE_185, SLICE
+INPUT = SLICE_186, SLICE
+INPUT = SLICE_187, SLICE
+INPUT = SLICE_188, SLICE
+INPUT = SLICE_189, SLICE
+INPUT = SLICE_190, SLICE
+INPUT = SLICE_191, SLICE
+INPUT = SLICE_192, SLICE
+INPUT = SLICE_193, SLICE
+INPUT = SLICE_195, SLICE
+INPUT = SLICE_197, SLICE
+INPUT = SLICE_199, SLICE
+INPUT = SLICE_200, SLICE
+INPUT = SLICE_201, SLICE
+INPUT = SLICE_202, SLICE
+INPUT = SLICE_203, SLICE
+INPUT = SLICE_204, SLICE
+INPUT = SLICE_205, SLICE
+INPUT = SLICE_206, SLICE
+INPUT = SLICE_207, SLICE
+INPUT = SLICE_208, SLICE
+INPUT = SLICE_209, SLICE
+INPUT = SLICE_210, SLICE
+INPUT = SLICE_211, SLICE
+INPUT = SLICE_212, SLICE
+INPUT = SLICE_213, SLICE
+INPUT = SLICE_214, SLICE
+INPUT = SLICE_215, SLICE
+INPUT = SLICE_216, SLICE
+INPUT = SLICE_217, SLICE
+INPUT = SLICE_218, SLICE
+INPUT = SLICE_219, SLICE
+INPUT = SLICE_220, SLICE
+INPUT = SLICE_221, SLICE
+INPUT = SLICE_222, SLICE
+INPUT = SLICE_223, SLICE
+INPUT = SLICE_224, SLICE
+INPUT = SLICE_225, SLICE
+INPUT = SLICE_226, SLICE
+INPUT = SLICE_227, SLICE
+INPUT = SLICE_228, SLICE
+INPUT = SLICE_229, SLICE
+INPUT = SLICE_230, SLICE
+INPUT = SLICE_231, SLICE
+INPUT = SLICE_232, SLICE
+INPUT = SLICE_233, SLICE
+INPUT = SLICE_234, SLICE
+INPUT = SLICE_235, SLICE
+INPUT = SLICE_236, SLICE
+INPUT = SLICE_237, SLICE
+INPUT = SLICE_238, SLICE
+INPUT = SLICE_239, SLICE
+INPUT = SLICE_240, SLICE
+INPUT = SLICE_241, SLICE
+INPUT = SLICE_242, SLICE
+INPUT = SLICE_243, SLICE
+INPUT = SLICE_244, SLICE
+INPUT = SLICE_245, SLICE
+INPUT = SLICE_246, SLICE
+INPUT = SLICE_247, SLICE
+INPUT = SLICE_248, SLICE
+INPUT = SLICE_249, SLICE
+INPUT = SLICE_250, SLICE
+INPUT = SLICE_251, SLICE
+INPUT = SLICE_252, SLICE
+INPUT = SLICE_253, SLICE
+INPUT = SLICE_254, SLICE
+INPUT = SLICE_255, SLICE
+INPUT = SLICE_256, SLICE
+INPUT = SLICE_257, SLICE
+INPUT = SLICE_258, SLICE
+INPUT = SLICE_259, SLICE
+INPUT = SLICE_260, SLICE
+INPUT = SLICE_261, SLICE
+INPUT = SLICE_262, SLICE
+INPUT = SLICE_263, SLICE
+INPUT = SLICE_264, SLICE
+INPUT = SLICE_265, SLICE
+INPUT = SLICE_266, SLICE
+INPUT = SLICE_267, SLICE
+INPUT = SLICE_268, SLICE
+INPUT = SLICE_269, SLICE
+INPUT = SLICE_270, SLICE
+INPUT = SLICE_271, SLICE
+INPUT = SLICE_272, SLICE
+INPUT = SLICE_273, SLICE
+INPUT = SLICE_274, SLICE
+INPUT = SLICE_275, SLICE
+INPUT = SLICE_276, SLICE
+INPUT = SLICE_277, SLICE
+INPUT = SLICE_278, SLICE
+INPUT = SLICE_279, SLICE
+INPUT = SLICE_280, SLICE
+INPUT = SLICE_281, SLICE
+INPUT = SLICE_282, SLICE
+INPUT = SLICE_283, SLICE
+INPUT = SLICE_284, SLICE
+INPUT = SLICE_285, SLICE
+INPUT = SLICE_286, SLICE
+INPUT = SLICE_287, SLICE
+INPUT = SLICE_288, SLICE
+INPUT = SLICE_290, SLICE
+INPUT = SLICE_291, SLICE
+INPUT = SLICE_292, SLICE
+INPUT = SLICE_293, SLICE
+INPUT = SLICE_294, SLICE
+INPUT = SLICE_295, SLICE
+INPUT = SLICE_296, SLICE
+INPUT = SLICE_297, SLICE
+INPUT = SLICE_298, SLICE
+INPUT = inPort[7], PIO
+INPUT = inPort[6], PIO
+INPUT = inPort[5], PIO
+INPUT = inPort[4], PIO
+INPUT = inPort[3], PIO
+INPUT = inPort[2], PIO
+INPUT = inPort[1], PIO
+INPUT = inPort[0], PIO
+INPUT = incoming, PIO
+INPUT = reset, PIO
+INPUT = instruction[7], PIO
+INPUT = instruction[6], PIO
+INPUT = instruction[5], PIO
+INPUT = instruction[4], PIO
+INPUT = instruction[3], PIO
+INPUT = instruction[2], PIO
+INPUT = instruction[1], PIO
+INPUT = instruction[0], PIO
+SIGNAL = bfup_clk_c, DUMMY
+INPUT = bfup_clk, PIO
+OUTPUT = SLICE_8, SLICE
+OUTPORT = n111, F0
+OUTPORT = delay_7, Q0
+OUTPUT = SLICE_11, SLICE
+OUTPORT = n113, F0
+OUTPORT = delay_5, Q0
+OUTPORT = n112, F1
+OUTPORT = delay_6, Q1
+OUTPORT = n4473, FCO
+OUTPUT = SLICE_13, SLICE
+OUTPORT = n115, F0
+OUTPORT = delay_3, Q0
+OUTPORT = delay_7_N_162_4, F1
+OUTPORT = n4472, FCO
+OUTPUT = SLICE_14, SLICE
+OUTPORT = n117, F0
+OUTPORT = delay_1, Q0
+OUTPORT = delay_7_N_162_2, F1
+OUTPORT = n4471, FCO
+OUTPUT = SLICE_26, SLICE
+OUTPORT = n118, F1
+OUTPORT = delay_0, Q1
+OUTPORT = n4470, FCO
+OUTPUT = SLICE_58, SLICE
+OUTPORT = n3119, F0
+OUTPORT = FWD, Q0
+OUTPORT = n3391, F1
+OUTPUT = SLICE_59, SLICE
+OUTPORT = RD_N_190, F0
+OUTPORT = RD_c, Q0
+OUTPORT = n6, F1
+OUTPUT = RD, PIO
+OUTPUT = SLICE_60, SLICE
+OUTPORT = WR_N_211, F0
+OUTPORT = WR_c, Q0
+OUTPORT = n4_adj_24, F1
+OUTPUT = WR, PIO
+OUTPUT = SLICE_61, SLICE
+OUTPORT = acc_7_N_146_0, F0
+OUTPORT = acc_0, Q0
+OUTPORT = acc_7_N_146_1, F1
+OUTPORT = acc_1, Q1
+OUTPUT = pData[0], PIO
+OUTPUT = pData[1], PIO
+OUTPUT = SLICE_62, SLICE
+OUTPORT = acc_7_N_146_2, F0
+OUTPORT = acc_2, Q0
+OUTPORT = acc_7_N_146_3, F1
+OUTPORT = acc_3, Q1
+OUTPUT = pData[2], PIO
+OUTPUT = pData[3], PIO
+OUTPUT = SLICE_63, SLICE
+OUTPORT = acc_7_N_146_4, F0
+OUTPORT = acc_4, Q0
+OUTPORT = acc_7_N_146_5, F1
+OUTPORT = acc_5, Q1
+OUTPUT = pData[4], PIO
+OUTPUT = pData[5], PIO
+OUTPUT = SLICE_64, SLICE
+OUTPORT = acc_7_N_146_6, F0
+OUTPORT = acc_6, Q0
+OUTPORT = acc_7_N_146_7, F1
+OUTPORT = acc_7, Q1
+OUTPUT = pData[6], PIO
+OUTPUT = pData[7], PIO
+OUTPUT = SLICE_65, SLICE
+OUTPORT = brackets_17_N_128_0, F0
+OUTPORT = brackets_0, Q0
+OUTPORT = brackets_17_N_128_1, F1
+OUTPORT = brackets_1, Q1
+OUTPUT = SLICE_66, SLICE
+OUTPORT = brackets_17_N_128_2, F0
+OUTPORT = brackets_2, Q0
+OUTPORT = brackets_17_N_128_3, F1
+OUTPORT = brackets_3, Q1
+OUTPUT = SLICE_67, SLICE
+OUTPORT = brackets_17_N_128_4, F0
+OUTPORT = brackets_4, Q0
+OUTPORT = brackets_17_N_128_5, F1
+OUTPORT = brackets_5, Q1
+OUTPUT = SLICE_68, SLICE
+OUTPORT = brackets_17_N_128_6, F0
+OUTPORT = brackets_6, Q0
+OUTPORT = brackets_17_N_128_7, F1
+OUTPORT = brackets_7, Q1
+OUTPUT = SLICE_69, SLICE
+OUTPORT = brackets_17_N_128_8, F0
+OUTPORT = brackets_8, Q0
+OUTPORT = brackets_17_N_128_9, F1
+OUTPORT = brackets_9, Q1
+OUTPUT = SLICE_70, SLICE
+OUTPORT = brackets_17_N_128_10, F0
+OUTPORT = brackets_10, Q0
+OUTPORT = brackets_17_N_128_11, F1
+OUTPORT = brackets_11, Q1
+OUTPUT = SLICE_71, SLICE
+OUTPORT = brackets_17_N_128_12, F0
+OUTPORT = brackets_12, Q0
+OUTPORT = brackets_17_N_128_13, F1
+OUTPORT = brackets_13, Q1
+OUTPUT = SLICE_72, SLICE
+OUTPORT = brackets_17_N_128_14, F0
+OUTPORT = brackets_14, Q0
+OUTPORT = brackets_17_N_128_15, F1
+OUTPORT = brackets_15, Q1
+OUTPUT = SLICE_73, SLICE
+OUTPORT = brackets_17_N_128_16, F0
+OUTPORT = brackets_16, Q0
+OUTPORT = brackets_17_N_128_17, F1
+OUTPORT = brackets_17, Q1
+OUTPUT = SLICE_74, SLICE
+OUTPORT = n4987, F0
+OUTPORT = delay_2, Q0
+OUTPORT = delay_4, Q1
+OUTPUT = SLICE_75, SLICE
+OUTPORT = drive_bus_N_225, F0
+OUTPORT = drive_bus, Q0
+OUTPORT = n5135, F1
+OUTPUT = SLICE_80, SLICE
+OUTPORT = p_16_N_111_0, F0
+OUTPORT = p_c_0, Q0
+OUTPORT = n4_adj_87, F1
+OUTPUT = p[0], PIO
+OUTPUT = SLICE_81, SLICE
+OUTPORT = i2_4_lut_adj_27_1_f5b, OFX0
+OUTPORT = p_c_1, Q1
+OUTPORT = p_16_N_111_1, OFX1
+OUTPUT = p[1], PIO
+OUTPUT = SLICE_82, SLICE
+OUTPORT = i2_4_lut_adj_24_1_f5b, OFX0
+OUTPORT = p_c_2, Q1
+OUTPORT = p_16_N_111_2, OFX1
+OUTPUT = p[2], PIO
+OUTPUT = SLICE_83, SLICE
+OUTPORT = i2_4_lut_adj_21_1_f5b, OFX0
+OUTPORT = p_c_3, Q1
+OUTPORT = p_16_N_111_3, OFX1
+OUTPUT = p[3], PIO
+OUTPUT = SLICE_84, SLICE
+OUTPORT = i2_4_lut_adj_11_1_f5b, OFX0
+OUTPORT = p_c_4, Q1
+OUTPORT = p_16_N_111_4, OFX1
+OUTPUT = p[4], PIO
+OUTPUT = SLICE_85, SLICE
+OUTPORT = i2_4_lut_adj_1_1_f5b, OFX0
+OUTPORT = p_c_5, Q1
+OUTPORT = p_16_N_111_5, OFX1
+OUTPUT = p[5], PIO
+OUTPUT = SLICE_86, SLICE
+OUTPORT = i2_4_lut_1_f5b, OFX0
+OUTPORT = p_c_6, Q1
+OUTPORT = p_16_N_111_6, OFX1
+OUTPUT = p[6], PIO
+OUTPUT = SLICE_87, SLICE
+OUTPORT = i2_4_lut_adj_107_1_f5b, OFX0
+OUTPORT = p_c_7, Q1
+OUTPORT = p_16_N_111_7, OFX1
+OUTPUT = p[7], PIO
+OUTPUT = SLICE_88, SLICE
+OUTPORT = i2_4_lut_adj_78_1_f5b, OFX0
+OUTPORT = p_c_8, Q1
+OUTPORT = p_16_N_111_8, OFX1
+OUTPUT = p[8], PIO
+OUTPUT = SLICE_89, SLICE
+OUTPORT = i2_4_lut_adj_63_1_f5b, OFX0
+OUTPORT = p_c_9, Q1
+OUTPORT = p_16_N_111_9, OFX1
+OUTPUT = p[9], PIO
+OUTPUT = SLICE_90, SLICE
+OUTPORT = i2_4_lut_adj_58_1_f5b, OFX0
+OUTPORT = p_c_10, Q1
+OUTPORT = p_16_N_111_10, OFX1
+OUTPUT = p[10], PIO
+OUTPUT = SLICE_91, SLICE
+OUTPORT = i2_4_lut_adj_55_1_f5b, OFX0
+OUTPORT = p_c_11, Q1
+OUTPORT = p_16_N_111_11, OFX1
+OUTPUT = p[11], PIO
+OUTPUT = SLICE_92, SLICE
+OUTPORT = i2_4_lut_adj_54_1_f5b, OFX0
+OUTPORT = p_c_12, Q1
+OUTPORT = p_16_N_111_12, OFX1
+OUTPUT = p[12], PIO
+OUTPUT = SLICE_93, SLICE
+OUTPORT = i2_4_lut_adj_53_1_f5b, OFX0
+OUTPORT = p_c_13, Q1
+OUTPORT = p_16_N_111_13, OFX1
+OUTPUT = p[13], PIO
+OUTPUT = SLICE_94, SLICE
+OUTPORT = i2_4_lut_adj_65_1_f5b, OFX0
+OUTPORT = p_c_14, Q1
+OUTPORT = p_16_N_111_14, OFX1
+OUTPUT = p[14], PIO
+OUTPUT = SLICE_95, SLICE
+OUTPORT = i2_4_lut_adj_26_1_f5b, OFX0
+OUTPORT = p_c_15, Q1
+OUTPORT = p_16_N_111_15, OFX1
+OUTPUT = p[15], PIO
+OUTPUT = SLICE_96, SLICE
+OUTPORT = i2_4_lut_adj_5_1_f5b, OFX0
+OUTPORT = p_c_16, Q1
+OUTPORT = p_16_N_111_16, OFX1
+OUTPUT = p[16], PIO
+OUTPUT = SLICE_97, SLICE
+OUTPORT = pc_17_N_93_0, F0
+OUTPORT = pc_0, Q0
+OUTPORT = n7_adj_122, F1
+OUTPUT = pc_pins[0], PIO
+OUTPUT = SLICE_98, SLICE
+OUTPORT = i4_4_lut_adj_46_1_f5b, OFX0
+OUTPORT = pc_1, Q1
+OUTPORT = pc_17_N_93_1, OFX1
+OUTPUT = pc_pins[1], PIO
+OUTPUT = SLICE_99, SLICE
+OUTPORT = i4_4_lut_adj_48_1_f5b, OFX0
+OUTPORT = pc_2, Q1
+OUTPORT = pc_17_N_93_2, OFX1
+OUTPUT = pc_pins[2], PIO
+OUTPUT = SLICE_100, SLICE
+OUTPORT = i4_4_lut_adj_51_1_f5b, OFX0
+OUTPORT = pc_3, Q1
+OUTPORT = pc_17_N_93_3, OFX1
+OUTPUT = pc_pins[3], PIO
+OUTPUT = SLICE_101, SLICE
+OUTPORT = i4_4_lut_adj_68_1_f5b, OFX0
+OUTPORT = pc_4, Q1
+OUTPORT = pc_17_N_93_4, OFX1
+OUTPUT = pc_pins[4], PIO
+OUTPUT = SLICE_102, SLICE
+OUTPORT = i4_4_lut_adj_71_1_f5b, OFX0
+OUTPORT = pc_5, Q1
+OUTPORT = pc_17_N_93_5, OFX1
+OUTPUT = pc_pins[5], PIO
+OUTPUT = SLICE_103, SLICE
+OUTPORT = i4_4_lut_adj_73_1_f5b, OFX0
+OUTPORT = pc_6, Q1
+OUTPORT = pc_17_N_93_6, OFX1
+OUTPUT = pc_pins[6], PIO
+OUTPUT = SLICE_104, SLICE
+OUTPORT = i4_4_lut_adj_76_1_f5b, OFX0
+OUTPORT = pc_7, Q1
+OUTPORT = pc_17_N_93_7, OFX1
+OUTPUT = pc_pins[7], PIO
+OUTPUT = SLICE_105, SLICE
+OUTPORT = i4_4_lut_adj_79_1_f5b, OFX0
+OUTPORT = pc_8, Q1
+OUTPORT = pc_17_N_93_8, OFX1
+OUTPUT = pc_pins[8], PIO
+OUTPUT = SLICE_106, SLICE
+OUTPORT = i4_4_lut_adj_82_1_f5b, OFX0
+OUTPORT = pc_9, Q1
+OUTPORT = pc_17_N_93_9, OFX1
+OUTPUT = pc_pins[9], PIO
+OUTPUT = SLICE_107, SLICE
+OUTPORT = i2_4_lut_adj_88_1_f5b, OFX0
+OUTPORT = pc_10, Q1
+OUTPORT = pc_17_N_93_10, OFX1
+OUTPUT = pc_pins[10], PIO
+OUTPUT = SLICE_108, SLICE
+OUTPORT = i4_4_lut_adj_92_1_f5b, OFX0
+OUTPORT = pc_11, Q1
+OUTPORT = pc_17_N_93_11, OFX1
+OUTPUT = pc_pins[11], PIO
+OUTPUT = SLICE_109, SLICE
+OUTPORT = i4_4_lut_adj_94_1_f5b, OFX0
+OUTPORT = pc_12, Q1
+OUTPORT = pc_17_N_93_12, OFX1
+OUTPUT = pc_pins[12], PIO
+OUTPUT = SLICE_110, SLICE
+OUTPORT = pc_17_N_93_13, F0
+OUTPORT = pc_13, Q0
+OUTPORT = pc_17_N_93_14, F1
+OUTPORT = pc_14, Q1
+OUTPUT = pc_pins[13], PIO
+OUTPUT = pc_pins[14], PIO
+OUTPUT = SLICE_111, SLICE
+OUTPORT = pc_17_N_93_15, F0
+OUTPORT = pc_15, Q0
+OUTPORT = pc_17_N_93_16, F1
+OUTPORT = pc_16, Q1
+OUTPUT = pc_pins[15], PIO
+OUTPUT = pc_pins[16], PIO
+OUTPUT = SLICE_112, SLICE
+OUTPORT = pc_17_N_93_17, F0
+OUTPORT = pc_17, Q0
+OUTPORT = n5_adj_8, F1
+OUTPUT = pc_pins[17], PIO
+OUTPUT = SLICE_113, SLICE
+OUTPORT = portRD_N_171, F0
+OUTPORT = portRD_c, Q0
+OUTPORT = n4_adj_133, F1
+OUTPUT = portRD, PIO
+OUTPUT = SLICE_114, SLICE
+OUTPORT = portWR_N_185, F0
+OUTPORT = portWR_c, Q0
+OUTPORT = n1, F1
+OUTPUT = portWR, PIO
+OUTPUT = SLICE_115, SLICE
+OUTPORT = n5240, F0
+OUTPORT = state_0, Q0
+OUTPORT = n4937, F1
+OUTPORT = state_1, Q1
+OUTPUT = SLICE_116, SLICE
+OUTPORT = n3_adj_9, F0
+OUTPORT = state_2, Q0
+OUTPUT = SLICE_117, SLICE
+OUTPORT = n1702, F0
+OUTPORT = state_3, Q0
+OUTPORT = n6017, F1
+OUTPORT = state_4, Q1
+OUTPUT = SLICE_118, SLICE
+OUTPORT = n3115, F0
+OUTPORT = state_5, Q0
+OUTPORT = n6003, F1
+OUTPORT = state_6, Q1
+OUTPUT = SLICE_194, SLICE
+OUTPORT = n5_adj_37, F0
+OUTPORT = outPort_c_6, Q0
+OUTPORT = n8_adj_132, F1
+OUTPORT = outPort_c_7, Q1
+OUTPUT = outPort[6], PIO
+OUTPUT = outPort[7], PIO
+OUTPUT = SLICE_196, SLICE
+OUTPORT = n5_adj_34, F0
+OUTPORT = outPort_c_2, Q0
+OUTPORT = n8_adj_50, F1
+OUTPORT = outPort_c_3, Q1
+OUTPUT = outPort[2], PIO
+OUTPUT = outPort[3], PIO
+OUTPUT = SLICE_198, SLICE
+OUTPORT = n5_adj_28, F0
+OUTPORT = outPort_c_0, Q0
+OUTPORT = n8_adj_120, F1
+OUTPORT = outPort_c_1, Q1
+OUTPUT = outPort[0], PIO
+OUTPUT = outPort[1], PIO
+OUTPUT = SLICE_289, SLICE
+OUTPORT = n2_adj_39, F0
+OUTPORT = outPort_c_4, Q0
+OUTPORT = n2615, F1
+OUTPORT = outPort_c_5, Q1
+OUTPUT = outPort[4], PIO
+OUTPUT = outPort[5], PIO
+
