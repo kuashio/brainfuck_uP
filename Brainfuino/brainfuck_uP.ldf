@@ -18,16 +18,7 @@
         <Source name="brainfuck_uP/brainfuck_uP.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
-        <Source name="Testing/Testing.spf" type="Simulation Project File" type_short="SPF">
-            <Options/>
-        </Source>
         <Source name="testing_Brainfuino/testing_Brainfuino.spf" type="Simulation Project File" type_short="SPF">
-            <Options/>
-        </Source>
-        <Source name="testingBF/testingBF.spf" type="Simulation Project File" type_short="SPF">
-            <Options/>
-        </Source>
-        <Source name="testingSlowPorts/testingSlowPorts.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
         <Source name="Untitled.pcf" type="Power Calculator" type_short="PCF" excluded="TRUE">
