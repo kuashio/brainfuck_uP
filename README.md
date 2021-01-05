@@ -1,9 +1,11 @@
 # brainfuck_uP
+
 A brainfuck-native soft processor written in Verilog.
 
 The only project included at the moment is the one used for the ***Brainfuino [-]+.*** board. It's implemented in a Lattice Diamond project for a MachXO2 FPGA (LCMXO2-640HC-4TG100C). 
 
 ## Source Code
+
 The source code is in the [source folder](./Brainfuino/brainfuck_uP/source/).
 
 ## Related Projects
@@ -15,10 +17,5 @@ The source code is in the [source folder](./Brainfuino/brainfuck_uP/source/).
 
 ## Contact
 
-<<<<<<< HEAD
-For bug report or anything related to brainfuck_uP, I may be reached at kuashio@gmail.com 
-=======
 For bug report or anything related to brainfuck_uP, I may be reached at kuashio@gmail.com 
 
-
->>>>>>> b87dfda9d2755e36bf3bcd2be4b7cf4335e3e9de
