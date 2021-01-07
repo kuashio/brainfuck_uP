@@ -17,5 +17,7 @@ The source code is in the [source folder](./Brainfuino/brainfuck_uP/source/).
 
 ## Contact
 
+Eduardo Corpeño
+
 For bug report or anything related to brainfuck_uP, I may be reached at kuashio@gmail.com 
 
